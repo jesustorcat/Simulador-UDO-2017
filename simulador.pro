@@ -38,3 +38,6 @@ HEADERS += \
 
 FORMS += \
         simulador.ui
+
+RESOURCES += \
+    iconos.qrc

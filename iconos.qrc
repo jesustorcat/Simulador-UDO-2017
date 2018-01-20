@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/iconos">
+        <file>Iconos/application_x_desktop.ico</file>
+        <file>Iconos/arrow_refresh.ico</file>
+        <file>Iconos/close.ico</file>
+        <file>Iconos/copy.ico</file>
+        <file>Iconos/cut.ico</file>
+        <file>Iconos/document_new.ico</file>
+        <file>Iconos/document_open.ico</file>
+        <file>Iconos/document_open (1).ico</file>
+        <file>Iconos/document_save.ico</file>
+        <file>Iconos/dynamic_blue_left.ico</file>
+        <file>Iconos/exit.ico</file>
+        <file>Iconos/info.ico</file>
+        <file>Iconos/next_blue.ico</file>
+        <file>Iconos/paste.ico</file>
+        <file>Iconos/pause.ico</file>
+        <file>Iconos/play.ico</file>
+        <file>Iconos/save_all.ico</file>
+        <file>Iconos/undo.ico</file>
+    </qresource>
+</RCC>

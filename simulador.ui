@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>691</width>
-    <height>483</height>
+    <width>613</width>
+    <height>389</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>691</width>
+     <width>613</width>
      <height>25</height>
     </rect>
    </property>
@@ -68,77 +68,177 @@
    <addaction name="menuAyuda"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>Herramientas</string>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionNuevo"/>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionGuardar"/>
+   <addaction name="actionGuardar_como"/>
+   <addaction name="separator"/>
+   <addaction name="actionDeshacer"/>
+   <addaction name="actionRehacer"/>
+   <addaction name="actionCortar"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionPegar"/>
+   <addaction name="separator"/>
+   <addaction name="actionCompilar"/>
+   <addaction name="actionEjecutar"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/document_new.ico</normaloff>:/iconos/Iconos/document_new.ico</iconset>
+   </property>
    <property name="text">
     <string>Nuevo</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
   </action>
   <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/document_open (1).ico</normaloff>:/iconos/Iconos/document_open (1).ico</iconset>
+   </property>
    <property name="text">
     <string>Abrir</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
   </action>
   <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/document_save.ico</normaloff>:/iconos/Iconos/document_save.ico</iconset>
+   </property>
    <property name="text">
     <string>Guardar</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
   </action>
   <action name="actionGuardar_como">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/save_all.ico</normaloff>:/iconos/Iconos/save_all.ico</iconset>
+   </property>
    <property name="text">
     <string>Guardar como</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+G</string>
+   </property>
   </action>
   <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/close.ico</normaloff>:/iconos/Iconos/close.ico</iconset>
+   </property>
    <property name="text">
     <string>Salir</string>
    </property>
   </action>
   <action name="actionDeshacer">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/dynamic_blue_left.ico</normaloff>:/iconos/Iconos/dynamic_blue_left.ico</iconset>
+   </property>
    <property name="text">
     <string>Deshacer</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
   </action>
   <action name="actionRehacer">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/next_blue.ico</normaloff>:/iconos/Iconos/next_blue.ico</iconset>
+   </property>
    <property name="text">
     <string>Rehacer</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
   </action>
   <action name="actionCortar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/cut.ico</normaloff>:/iconos/Iconos/cut.ico</iconset>
+   </property>
    <property name="text">
     <string>Cortar</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
   </action>
   <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/copy.ico</normaloff>:/iconos/Iconos/copy.ico</iconset>
+   </property>
    <property name="text">
     <string>Copiar</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
   </action>
   <action name="actionPegar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/paste.ico</normaloff>:/iconos/Iconos/paste.ico</iconset>
+   </property>
    <property name="text">
     <string>Pegar</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
   </action>
   <action name="actionCompilar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/application_x_desktop.ico</normaloff>:/iconos/Iconos/application_x_desktop.ico</iconset>
+   </property>
    <property name="text">
     <string>Compilar</string>
+   </property>
+   <property name="shortcut">
+    <string>F10</string>
    </property>
   </action>
   <action name="actionCompilar_y_Ejecutar">
    <property name="text">
     <string>Compilar y Ejecutar</string>
    </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
   </action>
   <action name="actionEjecutar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/play.ico</normaloff>:/iconos/Iconos/play.ico</iconset>
+   </property>
    <property name="text">
     <string>Ejecutar</string>
+   </property>
+   <property name="shortcut">
+    <string>F12</string>
    </property>
   </action>
   <action name="actionVer_Manual">
@@ -153,6 +253,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="iconos.qrc"/>
+ </resources>
  <connections/>
 </ui>
