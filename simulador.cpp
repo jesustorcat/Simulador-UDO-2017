@@ -17,22 +17,50 @@ simulador::~simulador()
 
 void simulador::on_actionNuevo_triggered()
 {
+    archivo_txt = "";
     ui->textEdit->setPlainText("");
 }
 
 void simulador::on_actionAbrir_triggered()
 {
+    QString nombre_archivo = QFileDialog::getOpenFileName(this, "Abrir un archivo", "", tr("Archivos simulador UDO-2017 (*.udox);;Archivos de texto (*.txt);;Todos los archivos(*.*)"));
 
+    if(!nombre_archivo.isEmpty()){
+        QFile archivo_entrada(nombre_archivo);
+        if(archivo_entrada.open(QFile::ReadOnly | QFile::Text)){
+            archivo_txt = nombre_archivo;
+            QTextStream entrada(&archivo_entrada);
+            QString _texto = entrada.readAll();
+            archivo_entrada.close();
+            ui->textEdit->setPlainText(_texto);
+        }
+        else{
+            QMessageBox::critical(this, tr("ERROR"), tr("El archivo no se puede abrir"));
+            return;
+        }
+    }
 }
 
 void simulador::on_actionGuardar_triggered()
 {
+    QFile archivo_salida(archivo_txt);
+    if(archivo_salida.open(QFile::WriteOnly | QFile::Text)){
+        QTextStream salida(&archivo_salida);
+        salida << ui->textEdit->toPlainText();
+        archivo_salida.flush();
+        archivo_salida.close();
+    }
 
 }
 
 void simulador::on_actionGuardar_como_triggered()
 {
+    QString nombre_archivo = QFileDialog::getSaveFileName(this, tr("Guardar como"), "", tr("Archivos simulador UDO-2017 (*.udox);;Archivos de texto (*.txt);;Todos los archivos(*.*)"));
 
+    if(!nombre_archivo.isEmpty()){
+        archivo_txt = nombre_archivo;
+        on_actionGuardar_triggered();
+    }
 }
 
 void simulador::on_actionDeshacer_triggered()

@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
+#include <QFileDialog>
+#include <QTextStream>
+#include <QFile>
 
 namespace Ui {
 class simulador;
@@ -41,6 +44,7 @@ private slots:
 
 private:
     Ui::simulador *ui;
+    QString archivo_txt;
 };
 
 #endif // SIMULADOR_H
