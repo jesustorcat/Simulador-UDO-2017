@@ -13,7 +13,19 @@
   <property name="windowTitle">
    <string>simulador</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="styleSheet">
+       <string notr="true">textEdit {
+	background: black
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
@@ -84,6 +96,7 @@
    <addaction name="separator"/>
    <addaction name="actionDeshacer"/>
    <addaction name="actionRehacer"/>
+   <addaction name="separator"/>
    <addaction name="actionCortar"/>
    <addaction name="actionCopiar"/>
    <addaction name="actionPegar"/>
