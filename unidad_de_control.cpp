@@ -29,7 +29,13 @@ void UNIDAD_DE_CONTROL::cargar_indicadores(int _indicadores){
 void UNIDAD_DE_CONTROL::ejecutar_control(int &_Ca, int &_La, int &_Cb, int &_Lb, int &_Cf
                                          ,int &_Lf, int &_Cri, int &_Lri, int &_Rt, int &_Ccp
                                          ,int &_Lcp, int &_Icp, int &_Dcp, int &_Em, int &_Lm
-                                         ,int &_Ce, int &_Le, int &_Cs){
+                                         ,int &_Crdm, int &_Ce, int &_Le, int &_Cs){
+
+    Ca = 0; La = 0; Cb = 0; Lb = 0; Cf = 0; Lf = 0;
+    Cri = 0; Lri = 0; Rt = 0;
+    Ccp = 0; Lcp = 0; Icp = 0; Dcp = 0;
+    Crdm = 0; Em = 0; Lm = 0;
+    Ce = 0; Le = 0; Cs = 0;
 
     switch (temporizador){
         case 0: Crdm = 1; Lcp = 1; break;
@@ -137,6 +143,66 @@ void UNIDAD_DE_CONTROL::ejecutar_control(int &_Ca, int &_La, int &_Cb, int &_Lb,
                     switch (temporizador){
                         case 3: Cf = 1; op = 11; Rt = 1; break;
                     }
+                case 24: //Realiza una conjunción entre el dato almacenado en el registro “A”
+                         //con el del registro “B”
+                    switch (temporizador){
+                        case 3: Cf = 1; op = 16; Rt = 1; break;
+                    }
+                case 25: //Realiza una disyunción entre el dato almacenado en el registro “A”
+                         //con el del registro “B”
+                    switch (temporizador){
+                        case 3: Cf = 1; op = 15; Rt = 1; break;
+                    }
+                case 26: //Realiza una disyunción exclusiva entre el dato almacenado en el registro “A”
+                         //con el del registro “B”
+                    switch (temporizador){
+                        case 3: Cf = 1; op = 17; Rt = 1; break;
+                    }
+                case 27: //Coloca en complemento el registro “A”
+                    switch (temporizador){
+                        case 3: Cf = 1; op = 18; Rt = 1; break;
+                    }
+                case 28: //Realiza un desplazamiento hacia la izquierda
+                         //del dato almacenado en el registro “A”
+                    switch (temporizador){
+                        case 3: Cf = 1; op = 20; Rt = 1; break;
+                    }
+                case 29: //Realiza un desplazamiento hacia derecha del dato almacenado en el registro “A”
+                    switch (temporizador){
+                        case 3: Cf = 1; op = 20; Rt = 1; break;
+                    }
+                case 30: //Realiza la suma entre dos datos almacenados en la memoria
+                    switch (temporizador){
+                        case 3: Crdm = 1; Lcp = 1; break;
+                        case 4: Ca = 1; Lm = 1; Icp = 1; break;
+                        case 5: Crdm = 1; Lcp = 1; break;
+                        case 6: Cb = 1; Lm = 1; Icp = 1; break;
+                        case 7: Cf = 1; op = 0; Rt = 1; break;
+                    }
+                case 31:  //Realiza la resta entre dos datos almacenados en la memoria
+                    switch (temporizador){
+                        case 3: Crdm = 1; Lcp = 1; break;
+                        case 4: Ca = 1; Lm = 1; Icp = 1; break;
+                        case 5: Crdm = 1; Lcp = 1; break;
+                        case 6: Cb = 2; Lm = 1; Icp = 1; break;
+                        case 7: Cf = 1; op = 1; Rt = 1; break;
+                    }
+                case 32: //Saltar a una etiqueta
+                    switch (temporizador){
+                        case 3: Crdm = 1; Lcp = 1; break;
+                        case 4: Ccp = 1; Lm = 1; Rt = 1; break;
+                    }
+                case 33: //Alto
+                    switch (temporizador){
+                        case 3: Dcp = 1; Rt = 1; break;
+                    }
             }
     }
+
+    _Ca = Ca; _La = La; _Cb = Cb; _Lb = Lb; _Cf = Cf; _Lf = Lf;
+    _Cri = Cri; _Lri = Lri; _Rt = Rt;
+    _Ccp = Ccp; _Lcp = Lcp; _Icp = Icp; _Dcp = Dcp;
+    _Crdm = Crdm; _Em = Em; _Lm = Lm;
+    _Ce = Ce; _Le = Le; _Cs = Cs;
+
 }
