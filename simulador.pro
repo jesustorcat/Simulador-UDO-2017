@@ -28,13 +28,17 @@ SOURCES += \
         simulador.cpp \
     unidad_aritmetico_logica.cpp \
     unidad_de_control.cpp \
-    arbitro_de_bus.cpp
+    arbitro_de_bus.cpp \
+    analizador_lexico.cpp \
+    analizador_sintactico.cpp
 
 HEADERS += \
         simulador.h \
     unidad_aritmetico_logica.h \
     unidad_de_control.h \
-    arbitro_de_bus.h
+    arbitro_de_bus.h \
+    analizador_lexico.h \
+    analizador_sintactico.h
 
 FORMS += \
         simulador.ui
