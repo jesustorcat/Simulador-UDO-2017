@@ -6,6 +6,7 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include <QFile>
+#include "analizador_lexico.h"
 
 namespace Ui {
 class simulador;
@@ -41,6 +42,8 @@ private slots:
     void on_actionAcerca_de_triggered();
 
     void on_actionSalir_triggered();
+
+    void on_actionCompilar_triggered();
 
 private:
     Ui::simulador *ui;

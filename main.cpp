@@ -1,6 +1,5 @@
 #include "simulador.h"
 #include <QApplication>
-#include <unidad_aritmetico_logica.h>
 
 int main(int argc, char *argv[])
 {

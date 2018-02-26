@@ -10,6 +10,8 @@ simulador::simulador(QWidget *parent) :
     setCentralWidget(ui->textEdit);
 }
 
+    compilador compilar;
+
 simulador::~simulador()
 {
     delete ui;
@@ -100,4 +102,10 @@ void simulador::on_actionAcerca_de_triggered()
 void simulador::on_actionSalir_triggered()
 {
     close();
+}
+
+void simulador::on_actionCompilar_triggered()
+{
+    string titulo_archivo = archivo_txt.toStdString();
+    compilar.analisis_lexico(titulo_archivo);
 }
