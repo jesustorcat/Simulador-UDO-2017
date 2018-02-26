@@ -22,8 +22,8 @@ private:
     char respaldo[inst_max];
     char b[20][10];
     int i, lc, s, l, f, f1, n;
-    char *pch;
-    char *pch1;
+    char *buff;
+    char *buff1;
 };
 
 #endif // ANALIZADOR_LEXICO_H

@@ -7,6 +7,7 @@
 #include <QTextStream>
 #include <QFile>
 #include "analizador_lexico.h"
+#include "analizador_sintactico.h"
 
 namespace Ui {
 class simulador;

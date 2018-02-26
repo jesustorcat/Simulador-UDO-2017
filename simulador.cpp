@@ -11,6 +11,7 @@ simulador::simulador(QWidget *parent) :
 }
 
     compilador compilar;
+    compilador_sintactico c_sintactico;
 
 simulador::~simulador()
 {
@@ -107,5 +108,8 @@ void simulador::on_actionSalir_triggered()
 void simulador::on_actionCompilar_triggered()
 {
     string titulo_archivo = archivo_txt.toStdString();
-    compilar.analisis_lexico(titulo_archivo);
+    if(compilar.analisis_lexico(titulo_archivo))
+        c_sintactico.analisis_sintactico();
+    else
+        c_sintactico.analisis_sintactico();
 }
