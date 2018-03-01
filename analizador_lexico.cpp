@@ -120,52 +120,76 @@ int compilador::analisis_lexico(string compilar_archivo){
 
                 if (strcmp(buff, "nop") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "mov") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "cda") == 0)
                     lc+=2;
+
                else if (strcmp(buff, "sum") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "res") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "mul") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "div") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "inc") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "dec") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "pot") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "raiz") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "traa") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "trab") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "set") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "reset") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "and") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "or") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "xor") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "comp") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "desi") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "desd") == 0)
                     lc+=1;
+
                else if (strcmp(buff, "suma") == 0)
                     lc+=3;
+
                else if (strcmp(buff, "resta") == 0)
                     lc+=3;
+
                else if (strcmp(buff, "salt") == 0)
                     lc+=2;
+
                else if (strcmp(buff, "alto") == 0)
                     lc+=1;
             }

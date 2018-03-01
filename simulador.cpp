@@ -8,6 +8,12 @@ simulador::simulador(QWidget *parent) :
     ui->setupUi(this);
     setWindowTitle("Simulador UDO-2017");
     setCentralWidget(ui->textEdit);
+
+    auto barra_menu = ui->mainToolBar;
+    removeToolBar(barra_menu);
+    addToolBar(Qt::LeftToolBarArea, barra_menu);
+    barra_menu->show();
+
 }
 
     compilador compilar;

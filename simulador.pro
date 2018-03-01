@@ -30,7 +30,8 @@ SOURCES += \
     unidad_de_control.cpp \
     arbitro_de_bus.cpp \
     analizador_lexico.cpp \
-    analizador_sintactico.cpp
+    analizador_sintactico.cpp \
+    simulador_computador.cpp
 
 HEADERS += \
         simulador.h \
@@ -38,10 +39,12 @@ HEADERS += \
     unidad_de_control.h \
     arbitro_de_bus.h \
     analizador_lexico.h \
-    analizador_sintactico.h
+    analizador_sintactico.h \
+    simulador_computador.h
 
 FORMS += \
-        simulador.ui
+        simulador.ui \
+    simulador_computador.ui
 
 RESOURCES += \
     iconos.qrc
