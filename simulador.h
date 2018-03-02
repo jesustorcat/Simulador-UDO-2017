@@ -8,6 +8,7 @@
 #include <QFile>
 #include "analizador_lexico.h"
 #include "analizador_sintactico.h"
+#include "simulador_computador.h"
 
 namespace Ui {
 class simulador;
@@ -20,6 +21,7 @@ class simulador : public QMainWindow
 public:
     explicit simulador(QWidget *parent = 0);
     ~simulador();
+    simulador_computador *ventana_simulador = NULL;
 
 private slots:
     void on_actionNuevo_triggered();
@@ -46,9 +48,14 @@ private slots:
 
     void on_actionCompilar_triggered();
 
+    void on_actionEjecutar_triggered();
+
+    void on_actioncancelar_triggered();
+
 private:
     Ui::simulador *ui;
     QString archivo_txt;
+    int *h;
 };
 
 #endif // SIMULADOR_H

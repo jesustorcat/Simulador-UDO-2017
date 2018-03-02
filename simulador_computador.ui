@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1023</width>
-    <height>621</height>
+    <width>16777193</width>
+    <height>16777193</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
   </property>
   <property name="font">
    <font>
@@ -18,15 +24,18 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Simulador UDO - 2017</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="bus_principal">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>140</y>
-      <width>981</width>
+      <width>991</width>
       <height>31</height>
      </rect>
     </property>
@@ -45,11 +54,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="bus_secuandario_1">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>250</y>
+      <x>40</x>
+      <y>210</y>
       <width>351</width>
       <height>21</height>
      </rect>
@@ -66,13 +75,13 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="arbitro_bus">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>450</x>
       <y>210</y>
       <width>131</width>
-      <height>351</height>
+      <height>441</height>
      </rect>
     </property>
     <property name="font">
@@ -99,53 +108,53 @@ Bus</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>310</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 2px solid black;
- border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFFFFFFF</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>310</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 2px solid black;
- border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFFFFFFF</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="reg_a_1">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>380</y>
+      <y>250</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_b_1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>250</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ual_1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>310</y>
       <width>181</width>
       <height>41</height>
      </rect>
@@ -170,12 +179,12 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="reg_f_1">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>460</y>
-      <width>91</width>
+      <x>40</x>
+      <y>380</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -194,50 +203,50 @@ Bus</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>460</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 2px solid black;
- border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFFFFFFF</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>310</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 2px solid black;
- border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFFFFFFF</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
+      <x>150</x>
       <y>380</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_inst_1">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>250</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="uc_1">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>310</y>
       <width>131</width>
       <height>41</height>
      </rect>
@@ -262,12 +271,12 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="reg_temp_1">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>460</y>
-      <width>51</width>
+      <x>310</x>
+      <y>380</y>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
@@ -283,11 +292,11 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="bus_secundario_2">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>250</y>
+      <x>640</x>
+      <y>210</y>
       <width>351</width>
       <height>21</height>
      </rect>
@@ -298,17 +307,17 @@ Bus</string>
  background-color: rgb(100, 255, 0);</string>
     </property>
     <property name="text">
-     <string>Bus secundario 1</string>
+     <string>Bus secundario 2</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_13">
+   <widget class="QLabel" name="ual_2">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>380</y>
+      <x>650</x>
+      <y>310</y>
       <width>181</width>
       <height>41</height>
      </rect>
@@ -333,12 +342,12 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_14">
+   <widget class="QLabel" name="reg_f_2">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>460</y>
-      <width>91</width>
+      <x>640</x>
+      <y>380</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -354,12 +363,12 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_15">
+   <widget class="QLabel" name="reg_inst_2">
     <property name="geometry">
      <rect>
-      <x>880</x>
-      <y>310</y>
-      <width>91</width>
+      <x>890</x>
+      <y>250</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -378,9 +387,9 @@ Bus</string>
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>740</x>
-      <y>460</y>
-      <width>91</width>
+      <x>750</x>
+      <y>380</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -396,12 +405,12 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_17">
+   <widget class="QLabel" name="reg_b_2">
     <property name="geometry">
      <rect>
-      <x>740</x>
-      <y>310</y>
-      <width>91</width>
+      <x>750</x>
+      <y>250</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -417,12 +426,12 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_18">
+   <widget class="QLabel" name="reg_temp_2">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>460</y>
-      <width>51</width>
+      <x>910</x>
+      <y>380</y>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
@@ -438,11 +447,11 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_19">
+   <widget class="QLabel" name="uc_2">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>380</y>
+      <x>870</x>
+      <y>310</y>
       <width>131</width>
       <height>41</height>
      </rect>
@@ -467,12 +476,12 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_20">
+   <widget class="QLabel" name="reg_a_2">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>310</y>
-      <width>91</width>
+      <x>640</x>
+      <y>250</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -488,13 +497,13 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView">
+   <widget class="QGraphicsView" name="cuerpo_cpu1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>230</y>
+      <x>20</x>
+      <y>190</y>
       <width>391</width>
-      <height>281</height>
+      <height>241</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -503,13 +512,13 @@ Bus</string>
  background-color: rgb(255, 255, 0);</string>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView_2">
+   <widget class="QGraphicsView" name="cuerpo_cpu2">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>230</y>
+      <x>620</x>
+      <y>190</y>
       <width>391</width>
-      <height>281</height>
+      <height>241</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -518,7 +527,7 @@ Bus</string>
  background-color: rgb(255, 255, 0);</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_21">
+   <widget class="QLabel" name="memoria_principal_1">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -546,7 +555,7 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_23">
+   <widget class="QLabel" name="memoria_principal_2">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -574,7 +583,7 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="puerto_entrada">
     <property name="geometry">
      <rect>
       <x>670</x>
@@ -601,7 +610,7 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_24">
+   <widget class="QLabel" name="memoria_principal_3">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -629,7 +638,7 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_25">
+   <widget class="QLabel" name="memoria_principal_4">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -657,7 +666,7 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView_3">
+   <widget class="QGraphicsView" name="cuerpo_memoria">
     <property name="geometry">
      <rect>
       <x>510</x>
@@ -672,7 +681,7 @@ Bus</string>
  background-color: rgb(0, 100, 255);</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_22">
+   <widget class="QLabel" name="puerto_salida">
     <property name="geometry">
      <rect>
       <x>840</x>
@@ -693,7 +702,7 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_26">
+   <widget class="QLabel" name="registro_dm">
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -714,7 +723,7 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_27">
+   <widget class="QLabel" name="registro_cp">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -735,41 +744,614 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <zorder>graphicsView_3</zorder>
-   <zorder>graphicsView_2</zorder>
-   <zorder>graphicsView</zorder>
-   <zorder>label</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_8</zorder>
+   <widget class="QGraphicsView" name="cuerpo_cpu3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>440</y>
+      <width>391</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 3px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 255, 0);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_b_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>500</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>630</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ual_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>560</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2.5px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 200);</string>
+    </property>
+    <property name="text">
+     <string>Unidad Aritmetico Lógica</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="uc_3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>560</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2.5px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 200);</string>
+    </property>
+    <property name="text">
+     <string>Unidad de Control</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_temp_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>630</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>RT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_inst_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>500</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_a_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>500</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bus_secundario_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>460</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(100, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>Bus secundario 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_f_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>630</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_f_4">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>630</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_temp_4">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>630</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>RT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_a_4">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>500</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cuerpo_cpu4">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>440</y>
+      <width>391</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 3px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 255, 0);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="uc_4">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>560</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2.5px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 200);</string>
+    </property>
+    <property name="text">
+     <string>Unidad de Control</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_inst_4">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>500</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>630</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ual_4">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>560</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2.5px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 200);</string>
+    </property>
+    <property name="text">
+     <string>Unidad Aritmetico Lógica</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reg_b_4">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>500</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bus_secundario_4">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>460</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(100, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>Bus secundario 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reloj">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>660</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFFFFFFF</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="op_1">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>OP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="op_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>OP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="op_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>OP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="op_4">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 100, 0);</string>
+    </property>
+    <property name="text">
+     <string>OP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>cuerpo_cpu4</zorder>
+   <zorder>cuerpo_memoria</zorder>
+   <zorder>cuerpo_cpu2</zorder>
+   <zorder>cuerpo_cpu1</zorder>
+   <zorder>bus_principal</zorder>
+   <zorder>bus_secuandario_1</zorder>
+   <zorder>arbitro_bus</zorder>
+   <zorder>reg_a_1</zorder>
+   <zorder>reg_b_1</zorder>
+   <zorder>ual_1</zorder>
+   <zorder>reg_f_1</zorder>
    <zorder>label_9</zorder>
-   <zorder>label_10</zorder>
-   <zorder>label_11</zorder>
-   <zorder>label_12</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_13</zorder>
-   <zorder>label_14</zorder>
-   <zorder>label_15</zorder>
+   <zorder>reg_inst_1</zorder>
+   <zorder>uc_1</zorder>
+   <zorder>reg_temp_1</zorder>
+   <zorder>bus_secundario_2</zorder>
+   <zorder>ual_2</zorder>
+   <zorder>reg_f_2</zorder>
+   <zorder>reg_inst_2</zorder>
    <zorder>label_16</zorder>
-   <zorder>label_17</zorder>
-   <zorder>label_18</zorder>
-   <zorder>label_19</zorder>
-   <zorder>label_20</zorder>
-   <zorder>label_21</zorder>
-   <zorder>label_23</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>label_24</zorder>
-   <zorder>label_25</zorder>
-   <zorder>label_22</zorder>
-   <zorder>label_26</zorder>
-   <zorder>label_27</zorder>
+   <zorder>reg_b_2</zorder>
+   <zorder>reg_temp_2</zorder>
+   <zorder>uc_2</zorder>
+   <zorder>reg_a_2</zorder>
+   <zorder>memoria_principal_1</zorder>
+   <zorder>memoria_principal_2</zorder>
+   <zorder>puerto_entrada</zorder>
+   <zorder>memoria_principal_3</zorder>
+   <zorder>memoria_principal_4</zorder>
+   <zorder>puerto_salida</zorder>
+   <zorder>registro_dm</zorder>
+   <zorder>registro_cp</zorder>
+   <zorder>cuerpo_cpu3</zorder>
+   <zorder>reg_b_3</zorder>
+   <zorder>label_29</zorder>
+   <zorder>ual_3</zorder>
+   <zorder>uc_3</zorder>
+   <zorder>reg_temp_3</zorder>
+   <zorder>reg_inst_3</zorder>
+   <zorder>reg_a_3</zorder>
+   <zorder>bus_secundario_3</zorder>
+   <zorder>reg_f_3</zorder>
+   <zorder>reg_f_4</zorder>
+   <zorder>reg_temp_4</zorder>
+   <zorder>reg_a_4</zorder>
+   <zorder>uc_4</zorder>
+   <zorder>reg_inst_4</zorder>
+   <zorder>label_42</zorder>
+   <zorder>ual_4</zorder>
+   <zorder>reg_b_4</zorder>
+   <zorder>bus_secundario_4</zorder>
+   <zorder>reloj</zorder>
+   <zorder>op_1</zorder>
+   <zorder>op_2</zorder>
+   <zorder>op_3</zorder>
+   <zorder>op_4</zorder>
   </widget>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -777,32 +1359,65 @@ Bus</string>
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionReiniciar"/>
    <addaction name="actionPaso"/>
    <addaction name="actionInstrucci_n"/>
+   <addaction name="actioncorrer"/>
+   <addaction name="separator"/>
+   <addaction name="actionReiniciar"/>
+   <addaction name="separator"/>
    <addaction name="actionSalir"/>
   </widget>
   <action name="actionReiniciar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/clear.ico</normaloff>:/iconos/Iconos/clear.ico</iconset>
+   </property>
    <property name="text">
     <string>Reiniciar</string>
    </property>
   </action>
   <action name="actionPaso">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/next.ico</normaloff>:/iconos/Iconos/next.ico</iconset>
+   </property>
    <property name="text">
     <string>Paso</string>
    </property>
   </action>
   <action name="actionInstrucci_n">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/instruccion.ico</normaloff>:/iconos/Iconos/instruccion.ico</iconset>
+   </property>
    <property name="text">
     <string>Instrucción</string>
    </property>
   </action>
   <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/close.ico</normaloff>:/iconos/Iconos/close.ico</iconset>
+   </property>
    <property name="text">
     <string>Salir</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+F4</string>
+   </property>
+  </action>
+  <action name="actioncorrer">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/correr.ico</normaloff>:/iconos/Iconos/correr.ico</iconset>
+   </property>
+   <property name="text">
+    <string>correr</string>
+   </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="iconos.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -103,6 +103,7 @@
    <addaction name="separator"/>
    <addaction name="actionCompilar"/>
    <addaction name="actionEjecutar"/>
+   <addaction name="actioncancelar"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNuevo">
@@ -255,6 +256,10 @@
    </property>
   </action>
   <action name="actionVer_Manual">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/ayuda.ico</normaloff>:/iconos/Iconos/ayuda.ico</iconset>
+   </property>
    <property name="text">
     <string>Ver Manual</string>
    </property>
@@ -263,8 +268,24 @@
    </property>
   </action>
   <action name="actionAcerca_de">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/info.ico</normaloff>:/iconos/Iconos/info.ico</iconset>
+   </property>
    <property name="text">
     <string>Acerca de</string>
+   </property>
+  </action>
+  <action name="actioncancelar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/cancelar.ico</normaloff>:/iconos/Iconos/cancelar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>cancelar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
    </property>
   </action>
  </widget>

@@ -18,5 +18,11 @@
         <file>Iconos/play.ico</file>
         <file>Iconos/save_all.ico</file>
         <file>Iconos/undo.ico</file>
+        <file>Iconos/clear.ico</file>
+        <file>Iconos/next.ico</file>
+        <file>Iconos/correr.ico</file>
+        <file>Iconos/instruccion.ico</file>
+        <file>Iconos/ayuda.ico</file>
+        <file>Iconos/cancelar.ico</file>
     </qresource>
 </RCC>

@@ -5,10 +5,12 @@ simulador::simulador(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::simulador)
 {
+    //Ventana principal del editor
     ui->setupUi(this);
     setWindowTitle("Simulador UDO-2017");
     setCentralWidget(ui->textEdit);
 
+    //Barra de menú
     auto barra_menu = ui->mainToolBar;
     removeToolBar(barra_menu);
     addToolBar(Qt::LeftToolBarArea, barra_menu);
@@ -108,6 +110,7 @@ void simulador::on_actionAcerca_de_triggered()
 
 void simulador::on_actionSalir_triggered()
 {
+    delete ventana_simulador;
     close();
 }
 
@@ -118,4 +121,26 @@ void simulador::on_actionCompilar_triggered()
         c_sintactico.analisis_sintactico();
     else
         c_sintactico.analisis_sintactico();
+}
+
+void simulador::on_actionEjecutar_triggered()
+{
+    //Ventana del simulador
+    if (ventana_simulador == NULL){
+        ventana_simulador = new simulador_computador(this);
+        ventana_simulador->show();
+    }
+    else {
+        ventana_simulador->show();
+        ventana_simulador->activateWindow();
+    }
+}
+
+void simulador::on_actioncancelar_triggered()
+{
+    if (ventana_simulador != NULL)
+        delete ventana_simulador;
+
+    ventana_simulador = NULL;
+
 }
