@@ -116,12 +116,27 @@ void simulador::on_actionSalir_triggered()
 
 void simulador::on_actionCompilar_triggered()
 {
-    string titulo_archivo = archivo_txt.toStdString();
-    if(compilar.analisis_lexico(titulo_archivo))
-        c_sintactico.analisis_sintactico();
-    else
-        c_sintactico.analisis_sintactico();
+    if (archivo_txt != NULL){
+        string titulo_archivo = archivo_txt.toStdString();
+        if(compilar.analisis_lexico(titulo_archivo))
+            c_sintactico.analisis_sintactico();
+        else
+            c_sintactico.analisis_sintactico();
+    }
+    else{
+        QMessageBox::StandardButton respuesta;
+        QString pregunta = "Para compilar debe guardar el archivo.\n";
+          respuesta = QMessageBox::question(this, "Compilar", pregunta+"¿Desea guardar el archivo?",
+                                            QMessageBox::Yes|QMessageBox::No);
+          if (respuesta == QMessageBox::Yes) {
+            on_actionGuardar_como_triggered();
+          }
+          else {
+            return;
+          }
+    }
 }
+
 
 void simulador::on_actionEjecutar_triggered()
 {

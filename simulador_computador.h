@@ -2,6 +2,11 @@
 #define SIMULADOR_COMPUTADOR_H
 
 #include <QMainWindow>
+#include <fstream>
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
+#include <QDebug>
 #include "unidad_aritmetico_logica.h"
 #include "unidad_de_control.h"
 
@@ -28,6 +33,10 @@ private slots:
     void on_actionPaso_triggered();
 
     void on_actionInstrucci_n_triggered();
+
+    void on_actionReiniciar_triggered();
+
+    void on_actionSimular_triggered();
 
 private:
     Ui::simulador_computador *ui;

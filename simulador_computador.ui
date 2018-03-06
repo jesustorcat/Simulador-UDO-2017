@@ -48,7 +48,7 @@
  background-color: rgb(100, 255, 0);</string>
     </property>
     <property name="text">
-     <string>Bus Principal</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -123,7 +123,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -144,7 +144,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -194,7 +194,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -236,7 +236,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -357,7 +357,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -378,7 +378,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -420,7 +420,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -491,7 +491,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -549,7 +549,7 @@ Bus</string>
  background-color: rgb(255, 0, 255);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -577,7 +577,7 @@ Bus</string>
  background-color: rgb(255, 0, 255);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -601,7 +601,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>Puerto de entrada</string>
+     <string/>
     </property>
     <property name="maxLength">
      <number>32767</number>
@@ -632,7 +632,7 @@ Bus</string>
  background-color: rgb(255, 0, 255);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -660,7 +660,7 @@ Bus</string>
  background-color: rgb(255, 0, 255);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -696,7 +696,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>Puerto de Salida</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -717,7 +717,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>Registro</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -738,7 +738,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>Registro</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -774,7 +774,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -895,7 +895,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -916,7 +916,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -958,7 +958,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -979,7 +979,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1021,7 +1021,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1086,7 +1086,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1157,7 +1157,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1366,6 +1366,7 @@ Bus</string>
    <addaction name="actionReiniciar"/>
    <addaction name="separator"/>
    <addaction name="actionSalir"/>
+   <addaction name="actionSimular"/>
   </widget>
   <action name="actionReiniciar">
    <property name="icon">
@@ -1413,6 +1414,11 @@ Bus</string>
    </property>
    <property name="text">
     <string>correr</string>
+   </property>
+  </action>
+  <action name="actionSimular">
+   <property name="text">
+    <string>Simular</string>
    </property>
   </action>
  </widget>
