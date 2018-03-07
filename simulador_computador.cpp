@@ -1,20 +1,22 @@
 #include "simulador_computador.h"
 #include "ui_simulador_computador.h"
 
+using namespace std;
+
+long temp = 0, i = 0, reloj = 0;
+long int memoria[255];
+
+//Objetos
+UNIDAD_ARITMETICO_LOGICA ual;
+UNIDAD_DE_CONTROL uc;
+
+
 simulador_computador::simulador_computador(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::simulador_computador)
 {
     ui->setupUi(this);
 }
-
-    //Temporizador, funcionará como el reloj del computador.
-    long temp = 0, i= 0, reloj = 0;
-    long int memoria[255];
-
-    //Objetos
-    UNIDAD_ARITMETICO_LOGICA ual;
-    UNIDAD_DE_CONTROL uc;
 
 void simulador_computador::ejecutar(){
 
@@ -31,7 +33,7 @@ void simulador_computador::ejecutar(){
     uc.ejecutar_control(CA, LA, CB, LB, CF
                         ,LF, CRI, LRI, RT, CCP
                         ,LCP, ICP, DCP, EM, LM
-                        ,CRDM, CE, LE, CS);
+                        ,CRDM, CE, LE, CS, OP);
 
     //Carga el contenido del Registro de Contador de Programa hacia el bus
     if (LCP == 1){
@@ -60,7 +62,7 @@ void simulador_computador::ejecutar(){
     }
 
     //Carga el contenido del puerto de entrada al bus principal.
-    if (CE == 1){
+    if (LE == 1){
         ui->bus_principal->setText(ui->puerto_entrada->text());
     }
 
@@ -98,7 +100,7 @@ void simulador_computador::ejecutar(){
     }
 
     //Cargar contenido del puerto de entrada
-    if (LE == 1){
+    if (CE == 1){
         ui->puerto_entrada->text().toLong();
     }
 
@@ -122,18 +124,19 @@ void simulador_computador::ejecutar(){
 
     //Carga el código de operación de la unidad aritmético lógica.
     int op_1;
-    op_1 = ui->op_1->text().toInt();
-    ual.cargar_op(op_1);
+    op_1 = ual.cargar_op(OP);
+    ui->op_1->setText(QString::number(op_1, 16).toUpper());
 
     //Cargan funcion de la unidad aritmético lógica
-    ual.operacion(F, indicadores);
+    ual.operacion(_F, _indicadores);
 
     //Carga un registro en la memoria.
     if (EM == 1){
 
         i = ui->registro_dm->text().toLong();
-        ui->memoria_principal_1->setText(ui->bus_principal->text());
-        memoria[i] = ui->memoria_principal_1->text().toLong();
+        ui->memoria_principal_1->setText(QString::number(memoria[i], 16).toUpper());
+        ui->bus_principal->setText(ui->memoria_principal_1->text());
+        //memoria[i] = ui->memoria_principal_1->text().toLong();
     }
     else{
 
@@ -149,7 +152,6 @@ void simulador_computador::ejecutar(){
 
     //Incrementar registro contador de programa.
     if (ICP == 1){
-
         long x;
         x = ui->registro_cp->text().toLong();
         x++;
@@ -196,12 +198,17 @@ void simulador_computador::on_actionSalir_triggered()
 void simulador_computador::on_actionPaso_triggered()
 {
     ejecutar();
-
 }
 
 void simulador_computador::on_actionInstrucci_n_triggered()
 {
+    int instruccion;
     ejecutar();
+
+    do {
+        ejecutar();
+        instruccion = ui->reg_temp_1->text().toInt();
+    } while (instruccion != 0);
 }
 
 void simulador_computador::on_actionReiniciar_triggered()
@@ -257,23 +264,22 @@ void simulador_computador::on_actionReiniciar_triggered()
 
 void simulador_computador::on_actionSimular_triggered()
 {
-    char op[15];
-    //long j;
+    char xy[10];
+    long i;
     long int valor;
 
-    std::ifstream archivo_objeto("codigo_objeto.bin");
+    ifstream archivo_objeto("codigo_objeto.dat");
 
-    archivo_objeto.getline(op,15);
-    i = atol(op);
+    archivo_objeto.getline(xy,10);
+    i = atol(xy);
 
     while (!archivo_objeto.eof()){
-        archivo_objeto.getline(op,15);
-        valor = strtol(op,NULL,15);
+        archivo_objeto.getline(xy,10);
+        valor = strtol(xy,NULL,0);
         memoria[i] = valor;
         i++;
+        cout << valor << endl;
     }
 
     archivo_objeto.close();
-    qDebug("Hola");
-
 }

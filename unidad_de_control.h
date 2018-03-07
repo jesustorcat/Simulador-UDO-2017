@@ -9,7 +9,7 @@ public:
     UNIDAD_DE_CONTROL();
     ~UNIDAD_DE_CONTROL();
     void ejecutar_control(int&,int&,int&,int&,int&,int&,int&,int&,int&,int&,
-                          int&,int&,int&,int&,int&,int&,int&,int&, int&);
+                          int&,int&,int&,int&,int&,int&,int&,int&, int&, int&);
     void cargar_temporizador(long int);
     void cargar_ri(long);
     void cargar_indicadores(int);

@@ -26,7 +26,7 @@ int compilador_sintactico::analisis_sintactico(){
     archivo_sl = fopen("archivo_simbolos.dat", "r");
 
     //Se crea el archivo de sálida donde se generará el código objeto
-    ofstream codigo_objeto("codigo_objeto.bin");
+    ofstream codigo_objeto("codigo_objeto.dat");
 
     archivo_intermedio.getline(tmp, max_inst);
 

@@ -25,7 +25,7 @@ public:
 
     //Señales de control
     int CA, LA, CB, LB, CF, LF, OP, CRI, LRI, EM, LM, CCP, LCP, ICP, DCP, CRDM, CE, LE, CS, RT;
-    long F, indicadores;
+    long _F, _indicadores;
 
 private slots:
     void on_actionSalir_triggered();
