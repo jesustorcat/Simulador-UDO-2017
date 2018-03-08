@@ -22,6 +22,8 @@ public:
     explicit simulador_computador(QWidget *parent = 0);
     ~simulador_computador();
     void ejecutar();
+    long incrementar(long);
+    long decrementar(long);
 
     //Señales de control
     int CA, LA, CB, LB, CF, LF, OP, CRI, LRI, EM, LM, CCP, LCP, ICP, DCP, CRDM, CE, LE, CS, RT;

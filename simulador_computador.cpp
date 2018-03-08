@@ -5,6 +5,7 @@ using namespace std;
 
 long temp = 0, i = 0, reloj = 0;
 long int memoria[255];
+bool ok;
 
 //Objetos
 UNIDAD_ARITMETICO_LOGICA ual;
@@ -26,7 +27,7 @@ void simulador_computador::ejecutar(){
 
     ui->reg_temp_1->setText(QString::number(temp, 16).toUpper());
 
-    uc.cargar_ri(ui->reg_inst_1->text().toLong());
+    uc.cargar_ri(ui->reg_inst_1->text().toLong(&ok, 16));
     uc.cargar_temporizador(ui->reg_temp_1->text().toLong());
 
     //Cargar señales de control a la unidad de control
@@ -48,6 +49,8 @@ void simulador_computador::ejecutar(){
         i = ui->registro_dm->text().toLong();
         ui->memoria_principal_1->setText(QString::number(memoria[i], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_1->text());
+
+        cout << i << endl;
     }
     else{
 
@@ -85,7 +88,7 @@ void simulador_computador::ejecutar(){
     //Carga el contenido del bus hacia el registro de instrucciones.
     if (CRI == 1){
         ui->reg_inst_1->setText(ui->bus_principal->text());
-        uc.cargar_ri(ui->reg_inst_1->text().toLong());
+        uc.cargar_ri(ui->reg_inst_1->text().toLong(&ok, 16));
     }
     else {
 
@@ -123,9 +126,8 @@ void simulador_computador::ejecutar(){
     }
 
     //Carga el código de operación de la unidad aritmético lógica.
-    int op_1;
-    op_1 = ual.cargar_op(OP);
-    ui->op_1->setText(QString::number(op_1, 16).toUpper());
+    //ual.cargar_op(OP);
+    ui->op_1->setText(QString::number(ual.cargar_op(OP), 10).toUpper());
 
     //Cargan funcion de la unidad aritmético lógica
     ual.operacion(_F, _indicadores);
@@ -144,7 +146,8 @@ void simulador_computador::ejecutar(){
 
     //Cargar contenido en el registro F.
     if (CF == 1){
-        //ui->reg_f_1->setText();
+        ui->reg_f_1->setText(QString::number(_F, 16).toUpper());
+        cout << _F << endl;
     }
     else {
 
@@ -152,10 +155,10 @@ void simulador_computador::ejecutar(){
 
     //Incrementar registro contador de programa.
     if (ICP == 1){
-        long x;
-        x = ui->registro_cp->text().toLong();
-        x++;
-        ui->registro_cp->setText(QString::number(x, 16).toUpper());
+        //long x;
+        //x = ui->registro_cp->text().toLong();
+        //x++;
+        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong()), 16).toUpper());
     }
     else {
 
@@ -163,10 +166,14 @@ void simulador_computador::ejecutar(){
 
     //Decrementar registro contador de programa.
     if (DCP == 1){
-        long x;
-        x = ui->registro_cp->text().toLong();
-        x--;
-        ui->registro_cp->setText(QString::number(x, 16).toUpper());
+        //decrementar(ui->registro_cp->text().toLong());
+        //long x;
+        //x = ui->registro_cp->text().toLong();
+        //x--;
+        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+    }
+    else {
+
     }
 
     //Reinicio del registro temporizador.
@@ -283,3 +290,27 @@ void simulador_computador::on_actionSimular_triggered()
 
     archivo_objeto.close();
 }
+
+long simulador_computador::incrementar(long valor){
+    long incremento;
+    valor++;
+    incremento = valor;
+    return incremento;
+}
+
+long simulador_computador::decrementar(long valor){
+    long decremento;
+    valor--;
+    decremento = valor;
+    return decremento;
+}
+
+
+
+
+
+
+
+
+
+

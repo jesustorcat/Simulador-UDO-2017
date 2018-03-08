@@ -1199,7 +1199,7 @@ Bus</string>
  background-color: rgb(255, 100, 0);</string>
     </property>
     <property name="text">
-     <string>FFFFFFFF</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
