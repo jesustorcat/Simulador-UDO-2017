@@ -21,8 +21,15 @@ class simulador_computador : public QMainWindow
 public:
     explicit simulador_computador(QWidget *parent = 0);
     ~simulador_computador();
-    void ejecutar();
+    void ejecutar_n1();
     void proxima_instruccion_n1();
+    void cargar_codigo_n1();
+    void cargar_codigo_n2();
+    void cargar_codigo_n3();
+    void cargar_codigo_n4();
+    void ejecutar_n2();
+    void ejecutar_n3();
+    void ejecutar_n4();
     long incrementar(long);
     long decrementar(long);
 

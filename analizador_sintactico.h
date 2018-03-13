@@ -14,7 +14,10 @@ class compilador_sintactico
 public:
     compilador_sintactico();
     ~compilador_sintactico();
-    int analisis_sintactico();
+    int analisis_sintactico_n1();
+    int analisis_sintactico_n2();
+    int analisis_sintactico_n3();
+    int analisis_sintactico_n4();
 
 private:
     char etiqueta[20], direccion[20], operando[20], op[20], simbolo[80][20], simb_dir[80][20], tmp[max_inst];

@@ -118,10 +118,18 @@ void simulador::on_actionCompilar_triggered()
 {
     if (archivo_txt != NULL){
         string titulo_archivo = archivo_txt.toStdString();
-        if(compilar.analisis_lexico(titulo_archivo))
-            c_sintactico.analisis_sintactico();
-        else
-            c_sintactico.analisis_sintactico();
+        if(compilar.analisis_lexico(titulo_archivo)){
+            c_sintactico.analisis_sintactico_n1();
+            c_sintactico.analisis_sintactico_n2();
+            c_sintactico.analisis_sintactico_n3();
+            c_sintactico.analisis_sintactico_n4();
+        }
+        else{
+            c_sintactico.analisis_sintactico_n1();
+            c_sintactico.analisis_sintactico_n2();
+            c_sintactico.analisis_sintactico_n3();
+            c_sintactico.analisis_sintactico_n4();
+        }
     }
     else{
         QMessageBox::StandardButton respuesta;
