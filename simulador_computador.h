@@ -22,6 +22,7 @@ public:
     explicit simulador_computador(QWidget *parent = 0);
     ~simulador_computador();
     void ejecutar();
+    void proxima_instruccion_n1();
     long incrementar(long);
     long decrementar(long);
 

@@ -66,7 +66,7 @@ void simulador_computador::ejecutar(){
 
     //Carga el contenido del puerto de entrada al bus principal.
     if (LE == 1){
-        ui->bus_principal->setText(ui->puerto_entrada->text());
+        ui->bus_principal->setText(ui->puerto_entrada->text().toUpper());
     }
 
     //Carga el contenido del bus principal al registro de contador de programa.
@@ -110,7 +110,7 @@ void simulador_computador::ejecutar(){
     //Cargar contenido del bus principal hacia el registro A.
     if (CA == 1){
         ui->reg_a_1->setText(ui->bus_principal->text());
-        ual.cargar_a(ui->reg_a_1->text().toLong());
+        ual.cargar_a(ui->reg_a_1->text().toLong(&ok, 16));
     }
     else {
 
@@ -119,7 +119,7 @@ void simulador_computador::ejecutar(){
     //Cargar contenido del bus principal hacia el registro B.
     if (CB == 1){
         ui->reg_b_1->setText(ui->bus_principal->text());
-        ual.cargar_b(ui->reg_b_1->text().toLong());
+        ual.cargar_b(ui->reg_b_1->text().toLong(&ok, 16));
     }
     else {
 
@@ -146,8 +146,10 @@ void simulador_computador::ejecutar(){
 
     //Cargar contenido en el registro F.
     if (CF == 1){
+        ui->op_1->setText(QString::number(ual.cargar_op(OP), 10).toUpper());
+        ual.operacion(_F, _indicadores);
         ui->reg_f_1->setText(QString::number(_F, 16).toUpper());
-        cout << _F << endl;
+        //cout << OP << endl;
     }
     else {
 
@@ -209,13 +211,7 @@ void simulador_computador::on_actionPaso_triggered()
 
 void simulador_computador::on_actionInstrucci_n_triggered()
 {
-    int instruccion;
-    ejecutar();
-
-    do {
-        ejecutar();
-        instruccion = ui->reg_temp_1->text().toInt();
-    } while (instruccion != 0);
+    proxima_instruccion_n1();
 }
 
 void simulador_computador::on_actionReiniciar_triggered()
@@ -271,17 +267,17 @@ void simulador_computador::on_actionReiniciar_triggered()
 
 void simulador_computador::on_actionSimular_triggered()
 {
-    char xy[10];
+    char xy[20];
     long i;
     long int valor;
 
     ifstream archivo_objeto("codigo_objeto.dat");
 
-    archivo_objeto.getline(xy,10);
+    archivo_objeto.getline(xy,20);
     i = atol(xy);
 
     while (!archivo_objeto.eof()){
-        archivo_objeto.getline(xy,10);
+        archivo_objeto.getline(xy,20);
         valor = strtol(xy,NULL,0);
         memoria[i] = valor;
         i++;
@@ -303,6 +299,17 @@ long simulador_computador::decrementar(long valor){
     valor--;
     decremento = valor;
     return decremento;
+}
+
+void simulador_computador::proxima_instruccion_n1(){
+    int instruccion;
+    ejecutar();
+
+    do {
+        ejecutar();
+        instruccion = ui->reg_temp_1->text().toInt();
+    } while (instruccion != 0);
+
 }
 
 

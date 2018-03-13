@@ -231,7 +231,7 @@ void UNIDAD_DE_CONTROL::ejecutar_control(int &_Ca, int &_La, int &_Cb, int &_Lb,
                     }
                 break;
 
-                case 0x1f: //Realiza la suma entre dos datos almacenados en la memoria
+                case 0x1e: //Realiza la suma entre dos datos almacenados en la memoria
                     switch (temporizador){
                         case 2: Crdm = 1; Lcp = 1; break;
                         case 3: Ca = 1; Lm = 1; Icp = 1; break;
@@ -241,24 +241,24 @@ void UNIDAD_DE_CONTROL::ejecutar_control(int &_Ca, int &_La, int &_Cb, int &_Lb,
                     }
                 break;
 
-                case 0x20:  //Realiza la resta entre dos datos almacenados en la memoria
+                case 0x1f:  //Realiza la resta entre dos datos almacenados en la memoria
                     switch (temporizador){
                         case 2: Crdm = 1; Lcp = 1; break;
                         case 3: Ca = 1; Lm = 1; Icp = 1; break;
                         case 4: Crdm = 1; Lcp = 1; break;
-                        case 5: Cb = 2; Lm = 1; Icp = 1; break;
+                        case 5: Cb = 1; Lm = 1; Icp = 1; break;
                         case 6: Cf = 1; op = 1; Rt = 1; break;
                     }
                 break;
 
-                case 0x21: //Saltar a una etiqueta
+                case 0x20: //Saltar a una etiqueta
                     switch (temporizador){
                         case 2: Crdm = 1; Lcp = 1; break;
                         case 3: Ccp = 1; Lm = 1; Rt = 1; break;
                     }
                 break;
 
-                case 0x22: //Alto
+                case 0x21: //Alto
                     switch (temporizador){
                         case 2: Dcp = 1; Rt = 1; break;
                     }

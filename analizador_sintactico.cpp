@@ -6,13 +6,13 @@ compilador_sintactico::compilador_sintactico(){}
 compilador_sintactico::~compilador_sintactico(){}
 
 int compilador_sintactico::analisis_sintactico(){
-    char a[][20] = {"nop", "mov", "sal", "cda",
-                    "sum", "res", "mul", "div",
-                    "inc", "dec", "pot", "raiz",
-                    "traa", "trab", "set", "reset",
-                    "and", "or", "xor", "comp",
-                    "desi", "desd", "suma", "resta",
-                    "salt", "alto"};
+    char a[][20] = {"n1.nop", "n1.mov", "n1.sal", "n1.cda",
+                    "n1.sum", "n1.res", "n1.mul", "n1.div",
+                    "n1.inc", "n1.dec", "n1.pot", "n1.raiz",
+                    "n1.traa", "n1.trab", "n1.set", "n1.reset",
+                    "n1.and", "n1.or", "n1.xor", "n1.comp",
+                    "n1.desi", "n1.desd", "n1.suma", "n1.resta",
+                    "n1.salt", "n1.alto"};
 
     //Se inicializan las variables en cero "0"
     f1 = 0; lc = 0; i = 0; j = 0;
@@ -58,7 +58,7 @@ int compilador_sintactico::analisis_sintactico(){
 
     //Analiza el archivo intermedio
     while (!archivo_intermedio.eof()) {
-        for (i = 0; i < 15; i++){
+        for (i = 0; i < 20; i++){
             op[i] = 0;
             operando[i] = 0;
         }
@@ -85,34 +85,34 @@ int compilador_sintactico::analisis_sintactico(){
             buff2 = strtok(NULL, "$");
         }
 
-        if (strcmp(op, "nop") == 0)
+        if (strcmp(op, "n1.nop") == 0)
             codigo_objeto << "0x0" << endl;
 
-        else if ((strcmp(op, "mov") == 0) && (strcmp(operando, "s,e")))
+        else if ((strcmp(op, "n1.mov") == 0) && (strcmp(operando, "s,e") == 0))
             codigo_objeto << "0x1" << endl;
 
-        else if ((strcmp(op, "mov") == 0) && (strcmp(operando, "a,e")))
+        else if ((strcmp(op, "n1.mov") == 0) && (strcmp(operando, "a,e") == 0))
             codigo_objeto << "0x2" << endl;
 
-        else if ((strcmp(op, "mov") == 0) && (strcmp(operando, "b,e")))
+        else if ((strcmp(op, "n1.mov") == 0) && (strcmp(operando, "b,e") == 0))
             codigo_objeto << "0x3" << endl;
 
-        else if ((strcmp(op, "mov") == 0) && (strcmp(operando, "a,f")))
+        else if ((strcmp(op, "n1.mov") == 0) && (strcmp(operando, "a,f") == 0))
             codigo_objeto << "0x4" << endl;
 
-        else if ((strcmp(op, "mov") == 0) && (strcmp(operando, "b,f")))
+        else if ((strcmp(op, "n1.mov") == 0) && (strcmp(operando, "b,f") == 0))
             codigo_objeto << "0x5" << endl;
 
-        else if ((strcmp(op, "mov") == 0) && (strcmp(operando, "f,a")))
+        else if ((strcmp(op, "n1.mov") == 0) && (strcmp(operando, "f,a") == 0))
             codigo_objeto << "0x6" << endl;
 
-        else if ((strcmp(op, "mov") == 0) && (strcmp(operando, "f,b")))
+        else if ((strcmp(op, "n1.mov") == 0) && (strcmp(operando, "f,b") == 0))
             codigo_objeto << "0x7" << endl;
 
-        else if (strcmp(op, "sal") == 0)
+        else if (strcmp(op, "n1.sal") == 0)
             codigo_objeto << "0x8" << endl;
 
-        else if ((strcmp(op, "cda") == 0) && (strncmp(operando, "a,",2)) == 0){
+        else if ((strcmp(op, "n1.cda") == 0) && (strncmp(operando, "a,",2)) == 0){
             codigo_objeto << "0x9" << endl;
             pop = strtok(operando, ",h");
             j = 0;
@@ -124,7 +124,7 @@ int compilador_sintactico::analisis_sintactico(){
             }
         }
 
-        else if ((strcmp(op, "cda") == 0) && (strncmp(operando, "b,",2)) == 0){
+        else if ((strcmp(op, "n1.cda") == 0) && (strncmp(operando, "b,",2)) == 0){
             codigo_objeto << "0xa" << endl;
             pop = strtok(operando, ",h");
             j = 0;
@@ -136,7 +136,7 @@ int compilador_sintactico::analisis_sintactico(){
             }
         }
 
-        else if ((strcmp(op, "cda") == 0) && (strncmp(operando, "s,",2)) == 0){
+        else if ((strcmp(op, "n1.cda") == 0) && (strncmp(operando, "s,",2)) == 0){
             codigo_objeto << "0xb" << endl;
             pop = strtok(operando, ",h");
             j = 0;
@@ -147,92 +147,92 @@ int compilador_sintactico::analisis_sintactico(){
                 j+=1;
             }
         }
-        else if (strcmp(op, "sum") == 0)
+        else if (strcmp(op, "n1.sum") == 0)
             codigo_objeto << "0xc" << endl;
 
-        else if (strcmp(op, "res") == 0)
+        else if (strcmp(op, "n1.res") == 0)
             codigo_objeto << "0xd" << endl;
 
-        else if (strcmp(op, "mul") == 0)
+        else if (strcmp(op, "n1.mul") == 0)
             codigo_objeto << "0xe" << endl;
 
-        else if (strcmp(op, "div") == 0)
+        else if (strcmp(op, "n1.div") == 0)
             codigo_objeto << "0xf" << endl;
 
-        else if (strcmp(op, "inc") == 0)
+        else if (strcmp(op, "n1.inc") == 0)
             codigo_objeto << "0x10" << endl;
 
-        else if (strcmp(op, "dec") == 0)
+        else if (strcmp(op, "n1.dec") == 0)
             codigo_objeto << "0x11" << endl;
 
-        else if (strcmp(op, "pot") == 0)
+        else if (strcmp(op, "n1.pot") == 0)
             codigo_objeto << "0x12" << endl;
 
-        else if (strcmp(op, "raiz") == 0)
+        else if (strcmp(op, "n1.raiz") == 0)
             codigo_objeto << "0x13" << endl;
 
-        else if (strcmp(op, "traa") == 0)
+        else if (strcmp(op, "n1.traa") == 0)
             codigo_objeto << "0x14" << endl;
 
-        else if (strcmp(op, "trab") == 0)
+        else if (strcmp(op, "n1.trab") == 0)
             codigo_objeto << "0x15" << endl;
 
-        else if (strcmp(op, "set") == 0)
+        else if (strcmp(op, "n1.set") == 0)
             codigo_objeto << "0x16" << endl;
 
-        else if (strcmp(op, "reset") == 0)
+        else if (strcmp(op, "n1.reset") == 0)
             codigo_objeto << "0x17" << endl;
 
-        else if (strcmp(op, "and") == 0)
+        else if (strcmp(op, "n1.and") == 0)
+            codigo_objeto << "0x18" << endl;
+
+        else if (strcmp(op, "n1.or") == 0)
+            codigo_objeto << "0x19" << endl;
+
+        else if (strcmp(op, "n1.xor") == 0)
+            codigo_objeto << "0x1a" << endl;
+
+        else if (strcmp(op, "n1.comp") == 0)
             codigo_objeto << "0x1b" << endl;
 
-        else if (strcmp(op, "or") == 0)
+        else if (strcmp(op, "n1.desi") == 0)
             codigo_objeto << "0x1c" << endl;
 
-        else if (strcmp(op, "xor") == 0)
+        else if (strcmp(op, "n1.desd") == 0)
             codigo_objeto << "0x1d" << endl;
 
-        else if (strcmp(op, "comp") == 0)
+        else if (strcmp(op, "n1.suma") == 0){
             codigo_objeto << "0x1e" << endl;
+            pop = strtok(operando, ",h");
+            j = 0;
+            while (pop != NULL) {
+                switch (j) {
+                case 0: codigo_objeto << "0x" << pop << endl; break;
+                case 1: codigo_objeto << "0x" << pop << endl; break;
+                default: continue; break;
+                }
+                pop = strtok(NULL, ",h");
+                j+=1;
+            }
+        }
 
-        else if (strcmp(op, "desi") == 0)
+        else if (strcmp(op, "n1.resta") == 0){
             codigo_objeto << "0x1f" << endl;
+            pop = strtok(operando, ",h");
+            j = 0;
+            while (pop != NULL) {
+                switch (j) {
+                case 0: codigo_objeto << "0x" << pop << endl; break;
+                case 1: codigo_objeto << "0x" << pop << endl; break;
+                default: continue; break;
+                }
+                pop = strtok(NULL, ",h");
+                j+=1;
+            }
+        }
 
-        else if (strcmp(op, "desd") == 0)
+        else if (strcmp(op, "n1.salt") == 0){
             codigo_objeto << "0x20" << endl;
-
-        else if (strcmp(op, "suma") == 0){
-            codigo_objeto << "0x21" << endl;
-            pop = strtok(operando, ",h");
-            j = 0;
-            while (pop != NULL) {
-                switch (j) {
-                case 0: codigo_objeto << "0x" << pop << endl; break;
-                case 1: codigo_objeto << "0x" << pop << endl; break;
-                default: continue; break;
-                }
-                pop = strtok(NULL, ",h");
-                j+=1;
-            }
-        }
-
-        else if (strcmp(op, "resta") == 0){
-            codigo_objeto << "0x22" << endl;
-            pop = strtok(operando, ",h");
-            j = 0;
-            while (pop != NULL) {
-                switch (j) {
-                case 0: codigo_objeto << "0x" << pop << endl; break;
-                case 1: codigo_objeto << "0x" << pop << endl; break;
-                default: continue; break;
-                }
-                pop = strtok(NULL, ",h");
-                j+=1;
-            }
-        }
-
-        else if (strcmp(op, "salt") == 0){
-            codigo_objeto << "0x23" << endl;
             for (i = 0; i <= n; i++){
                 if (strcmp(operando, simbolo[i]) == 0){
                     codigo_objeto << simb_dir[i] << endl;
@@ -241,8 +241,8 @@ int compilador_sintactico::analisis_sintactico(){
             }
         }
 
-        else if (strcmp(op, "alto") == 0)
-            codigo_objeto << "0x24" << endl;
+        else if (strcmp(op, "n1.alto") == 0)
+            codigo_objeto << "0x21" << endl;
 
     }
 

@@ -17,7 +17,7 @@ public:
     int analisis_sintactico();
 
 private:
-    char etiqueta[15], direccion[15], operando[15], op[15], simbolo[80][15], simb_dir[80][15], tmp[max_inst];
+    char etiqueta[20], direccion[20], operando[20], op[20], simbolo[80][20], simb_dir[80][20], tmp[max_inst];
     int buff, buff1, longitud, i, j, lc, n, f1;
     char *buff2;
     char *pop;

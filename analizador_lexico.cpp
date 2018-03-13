@@ -7,13 +7,13 @@ compilador::compilador(){}
 compilador::~compilador(){}
 
 int compilador::analisis_lexico(string compilar_archivo){
-    char a[][20] = {"nop", "mov", "sal", "cda",
-                    "sum", "res", "mul", "div",
-                    "inc", "dec", "pot", "raiz",
-                    "traa", "trab", "set", "reset",
-                    "and", "or", "xor", "comp",
-                    "desi", "desd", "suma", "resta",
-                    "salt", "alto"};
+    char a[][20] = {"n1.nop", "n1.mov", "n1.sal", "n1.cda",
+                    "n1.sum", "n1.res", "n1.mul", "n1.div",
+                    "n1.inc", "n1.dec", "n1.pot", "n1.raiz",
+                    "n1.traa", "n1.trab", "n1.set", "n1.reset",
+                    "n1.and", "n1.or", "n1.xor", "n1.comp",
+                    "n1.desi", "n1.desd", "n1.suma", "n1.resta",
+                    "n1.salt", "n1.alto"};
 
     //limpia el contenido del arreglo "nombre"
     for(i = 0; i < 80; i++){
@@ -118,79 +118,79 @@ int compilador::analisis_lexico(string compilar_archivo){
 
             if (f1 == 0){
 
-                if (strcmp(buff, "nop") == 0)
+                if (strcmp(buff, "n1.nop") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "mov") == 0)
+               else if (strcmp(buff, "n1.mov") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "cda") == 0)
+               else if (strcmp(buff, "n1.cda") == 0)
                     lc+=2;
 
-               else if (strcmp(buff, "sum") == 0)
+               else if (strcmp(buff, "n1.sum") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "res") == 0)
+               else if (strcmp(buff, "n1.res") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "mul") == 0)
+               else if (strcmp(buff, "n1.mul") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "div") == 0)
+               else if (strcmp(buff, "n1.div") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "inc") == 0)
+               else if (strcmp(buff, "n1.inc") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "dec") == 0)
+               else if (strcmp(buff, "n1.dec") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "pot") == 0)
+               else if (strcmp(buff, "n1.pot") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "raiz") == 0)
+               else if (strcmp(buff, "n1.raiz") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "traa") == 0)
+               else if (strcmp(buff, "n1.traa") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "trab") == 0)
+               else if (strcmp(buff, "n1.trab") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "set") == 0)
+               else if (strcmp(buff, "n1.set") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "reset") == 0)
+               else if (strcmp(buff, "n1.reset") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "and") == 0)
+               else if (strcmp(buff, "n1.and") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "or") == 0)
+               else if (strcmp(buff, "n1.or") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "xor") == 0)
+               else if (strcmp(buff, "n1.xor") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "comp") == 0)
+               else if (strcmp(buff, "n1.comp") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "desi") == 0)
+               else if (strcmp(buff, "n1.desi") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "desd") == 0)
+               else if (strcmp(buff, "n1.desd") == 0)
                     lc+=1;
 
-               else if (strcmp(buff, "suma") == 0)
+               else if (strcmp(buff, "n1.suma") == 0)
                     lc+=3;
 
-               else if (strcmp(buff, "resta") == 0)
+               else if (strcmp(buff, "n1.resta") == 0)
                     lc+=3;
 
-               else if (strcmp(buff, "salt") == 0)
+               else if (strcmp(buff, "n1.salt") == 0)
                     lc+=2;
 
-               else if (strcmp(buff, "alto") == 0)
+               else if (strcmp(buff, "n1.alto") == 0)
                     lc+=1;
             }
             buff = strtok(NULL, "$");
