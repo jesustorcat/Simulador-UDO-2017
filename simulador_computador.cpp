@@ -52,7 +52,7 @@ void simulador_computador::ejecutar_n1(){
 
     //Carga el contenido de la memoria al bus principal.
     if (LM == 1){
-        i = ui->registro_dm->text().toLong();
+        i = ui->registro_dm->text().toLong(&ok, 16);
         ui->memoria_principal_1->setText(QString::number(memoria[i], 16).toUpper());
         ui->bus_secuandario_1->setText(ui->memoria_principal_1->text());
 
@@ -166,7 +166,7 @@ void simulador_computador::ejecutar_n1(){
         //long x;
         //x = ui->registro_cp->text().toLong();
         //x++;
-        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
     }
     else {
 
@@ -178,7 +178,7 @@ void simulador_computador::ejecutar_n1(){
         //long x;
         //x = ui->registro_cp->text().toLong();
         //x--;
-        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
     }
     else {
 
@@ -227,7 +227,7 @@ void simulador_computador::ejecutar_n2(){
 
     //Carga el contenido de la memoria al bus principal.
     if (LM == 1){
-        i2 = ui->registro_dm->text().toLong();
+        i2 = ui->registro_dm->text().toLong(&ok, 16);
         ui->memoria_principal_2->setText(QString::number(memoria_n2[i2], 16).toUpper());
         ui->bus_secundario_2->setText(ui->memoria_principal_2->text());
     }
@@ -339,7 +339,7 @@ void simulador_computador::ejecutar_n2(){
         //long x;
         //x = ui->registro_cp->text().toLong();
         //x++;
-        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
     }
     else {
 
@@ -351,7 +351,7 @@ void simulador_computador::ejecutar_n2(){
         //long x;
         //x = ui->registro_cp->text().toLong();
         //x--;
-        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
     }
     else {
 
@@ -401,7 +401,7 @@ void simulador_computador::ejecutar_n3(){
 
     //Carga el contenido de la memoria al bus principal.
     if (LM == 1){
-        i = ui->registro_dm->text().toLong();
+        i = ui->registro_dm->text().toLong(&ok, 16);
         ui->memoria_principal_3->setText(QString::number(memoria[i], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_3->text());
 
@@ -515,7 +515,7 @@ void simulador_computador::ejecutar_n3(){
         //long x;
         //x = ui->registro_cp->text().toLong();
         //x++;
-        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
     }
     else {
 
@@ -527,7 +527,7 @@ void simulador_computador::ejecutar_n3(){
         //long x;
         //x = ui->registro_cp->text().toLong();
         //x--;
-        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
     }
     else {
 
@@ -547,8 +547,6 @@ void simulador_computador::ejecutar_n3(){
     reloj++;
     ui->reloj->setText(reloj_hex);
 }
-
-
 
 void simulador_computador::ejecutar_n4(){
 
@@ -577,7 +575,7 @@ void simulador_computador::ejecutar_n4(){
 
     //Carga el contenido de la memoria al bus principal.
     if (LM == 1){
-        i = ui->registro_dm->text().toLong();
+        i = ui->registro_dm->text().toLong(&ok, 16);
         ui->memoria_principal_4->setText(QString::number(memoria[i], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_4->text());
 
@@ -691,7 +689,7 @@ void simulador_computador::ejecutar_n4(){
         //long x;
         //x = ui->registro_cp->text().toLong();
         //x++;
-        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+        ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
     }
     else {
 
@@ -703,7 +701,7 @@ void simulador_computador::ejecutar_n4(){
         //long x;
         //x = ui->registro_cp->text().toLong();
         //x--;
-        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong()), 16).toUpper());
+        ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
     }
     else {
 
