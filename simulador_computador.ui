@@ -937,7 +937,7 @@ Bus</string>
  background-color: rgb(100, 255, 0);</string>
     </property>
     <property name="text">
-     <string>Bus secundario 1</string>
+     <string>Bus secundario 3</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1178,7 +1178,7 @@ Bus</string>
  background-color: rgb(100, 255, 0);</string>
     </property>
     <property name="text">
-     <string>Bus secundario 2</string>
+     <string>Bus secundario 4</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
