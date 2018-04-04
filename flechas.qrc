@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/Flechas">
+        <file>Flechas/Izquierda.png</file>
+        <file>Flechas/Doble curva.png</file>
+        <file>Flechas/Doblada.png</file>
+        <file>Flechas/Derecha.png</file>
+        <file>Flechas/Arriba.png</file>
+        <file>Flechas/Abajo.png</file>
+        <file>Flechas/Izquierda-G.png</file>
+        <file>Flechas/Derecha-G.png</file>
+        <file>Flechas/Ariba-D.png</file>
+        <file>Flechas/Abajo-D.png</file>
+    </qresource>
+</RCC>

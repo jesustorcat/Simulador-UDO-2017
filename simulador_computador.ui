@@ -45,7 +45,7 @@
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(100, 255, 0);</string>
+background-color: rgb(201, 255, 113);</string>
     </property>
     <property name="text">
      <string/>
@@ -57,16 +57,16 @@
    <widget class="QLabel" name="bus_secuandario_1">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>30</x>
       <y>210</y>
-      <width>351</width>
+      <width>371</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(100, 255, 0);</string>
+background-color: rgb(201, 255, 113);</string>
     </property>
     <property name="text">
      <string>Bus secundario 1</string>
@@ -86,7 +86,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>25</pointsize>
+      <pointsize>26</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -94,7 +94,7 @@
     <property name="styleSheet">
      <string notr="true"> border: 3px solid black;
  border-radius: 5px;
- background-color: rgb(255, 255, 0);</string>
+background-color: rgb(252, 254, 174);</string>
     </property>
     <property name="text">
      <string>Arbitro 
@@ -111,7 +111,7 @@ Bus</string>
    <widget class="QLabel" name="reg_a_1">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>50</x>
       <y>250</y>
       <width>81</width>
       <height>31</height>
@@ -120,7 +120,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -141,7 +141,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -182,8 +182,8 @@ Bus</string>
    <widget class="QLabel" name="reg_f_1">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>380</y>
+      <x>50</x>
+      <y>390</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -191,7 +191,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -200,40 +200,19 @@ Bus</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>380</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 2px solid black;
- border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFFFFFFF</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QLabel" name="reg_inst_1">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>310</x>
       <y>250</y>
-      <width>81</width>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -275,18 +254,18 @@ Bus</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>380</y>
-      <width>41</width>
+      <y>390</y>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
-     <string>RT</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -295,16 +274,16 @@ Bus</string>
    <widget class="QLabel" name="bus_secundario_2">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>630</x>
       <y>210</y>
-      <width>351</width>
+      <width>371</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(100, 255, 0);</string>
+background-color: rgb(201, 255, 113);</string>
     </property>
     <property name="text">
      <string>Bus secundario 2</string>
@@ -345,8 +324,8 @@ Bus</string>
    <widget class="QLabel" name="reg_f_2">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>380</y>
+      <x>650</x>
+      <y>390</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -354,7 +333,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -366,40 +345,19 @@ Bus</string>
    <widget class="QLabel" name="reg_inst_2">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>910</x>
       <y>250</y>
-      <width>81</width>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_16">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>380</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 2px solid black;
- border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFFFFFFF</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -417,7 +375,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -430,18 +388,18 @@ Bus</string>
     <property name="geometry">
      <rect>
       <x>910</x>
-      <y>380</y>
-      <width>41</width>
+      <y>390</y>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
-     <string>RT</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -479,7 +437,7 @@ Bus</string>
    <widget class="QLabel" name="reg_a_2">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>650</x>
       <y>250</y>
       <width>81</width>
       <height>31</height>
@@ -488,7 +446,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -509,7 +467,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 3px solid black;
  border-radius: 5px;
- background-color: rgb(255, 255, 0);</string>
+background-color: rgb(252, 254, 174);</string>
     </property>
    </widget>
    <widget class="QGraphicsView" name="cuerpo_cpu2">
@@ -524,7 +482,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 3px solid black;
  border-radius: 5px;
- background-color: rgb(255, 255, 0);</string>
+background-color: rgb(252, 254, 174);</string>
     </property>
    </widget>
    <widget class="QLabel" name="memoria_principal_1">
@@ -546,7 +504,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 0, 255);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -574,7 +532,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 0, 255);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -598,7 +556,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -629,7 +587,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 0, 255);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -657,7 +615,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 0, 255);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -678,7 +636,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(0, 100, 255);</string>
+background-color: rgb(252, 254, 174);</string>
     </property>
    </widget>
    <widget class="QLabel" name="puerto_salida">
@@ -693,7 +651,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -714,7 +672,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -735,7 +693,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -756,7 +714,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 3px solid black;
  border-radius: 5px;
- background-color: rgb(255, 255, 0);</string>
+background-color: rgb(252, 254, 174);</string>
     </property>
    </widget>
    <widget class="QLabel" name="reg_b_3">
@@ -771,31 +729,10 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_29">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>630</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 2px solid black;
- border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFFFFFFF</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -863,18 +800,18 @@ Bus</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>630</y>
-      <width>41</width>
+      <y>640</y>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
-     <string>RT</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -883,16 +820,16 @@ Bus</string>
    <widget class="QLabel" name="reg_inst_3">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>310</x>
       <y>500</y>
-      <width>81</width>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -904,7 +841,7 @@ Bus</string>
    <widget class="QLabel" name="reg_a_3">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>50</x>
       <y>500</y>
       <width>81</width>
       <height>31</height>
@@ -913,7 +850,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -925,16 +862,16 @@ Bus</string>
    <widget class="QLabel" name="bus_secundario_3">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>30</x>
       <y>460</y>
-      <width>351</width>
+      <width>371</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(100, 255, 0);</string>
+background-color: rgb(201, 255, 113);</string>
     </property>
     <property name="text">
      <string>Bus secundario 3</string>
@@ -946,8 +883,8 @@ Bus</string>
    <widget class="QLabel" name="reg_f_3">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>630</y>
+      <x>50</x>
+      <y>640</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -955,7 +892,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -967,8 +904,8 @@ Bus</string>
    <widget class="QLabel" name="reg_f_4">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>630</y>
+      <x>650</x>
+      <y>640</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -976,7 +913,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -989,18 +926,18 @@ Bus</string>
     <property name="geometry">
      <rect>
       <x>910</x>
-      <y>630</y>
-      <width>41</width>
+      <y>640</y>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
-     <string>RT</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1009,7 +946,7 @@ Bus</string>
    <widget class="QLabel" name="reg_a_4">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>650</x>
       <y>500</y>
       <width>81</width>
       <height>31</height>
@@ -1018,7 +955,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -1039,7 +976,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 3px solid black;
  border-radius: 5px;
- background-color: rgb(255, 255, 0);</string>
+background-color: rgb(252, 254, 174);</string>
     </property>
    </widget>
    <widget class="QLabel" name="uc_4">
@@ -1074,40 +1011,19 @@ Bus</string>
    <widget class="QLabel" name="reg_inst_4">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>910</x>
       <y>500</y>
-      <width>81</width>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_42">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>630</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 2px solid black;
- border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFFFFFFF</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1154,7 +1070,7 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -1166,16 +1082,16 @@ Bus</string>
    <widget class="QLabel" name="bus_secundario_4">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>630</x>
       <y>460</y>
-      <width>351</width>
+      <width>371</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(100, 255, 0);</string>
+background-color: rgb(201, 255, 113);</string>
     </property>
     <property name="text">
      <string>Bus secundario 4</string>
@@ -1188,15 +1104,15 @@ Bus</string>
     <property name="geometry">
      <rect>
       <x>480</x>
-      <y>660</y>
+      <y>670</y>
       <width>71</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
      <string/>
@@ -1208,19 +1124,24 @@ Bus</string>
    <widget class="QLabel" name="op_1">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>10</y>
-      <width>31</width>
-      <height>21</height>
+      <x>130</x>
+      <y>290</y>
+      <width>21</width>
+      <height>16</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
-     <string>OP</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1229,19 +1150,24 @@ Bus</string>
    <widget class="QLabel" name="op_2">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>10</y>
-      <width>31</width>
-      <height>21</height>
+      <x>730</x>
+      <y>290</y>
+      <width>21</width>
+      <height>16</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
-     <string>OP</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1250,19 +1176,24 @@ Bus</string>
    <widget class="QLabel" name="op_3">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>10</y>
-      <width>31</width>
-      <height>21</height>
+      <x>130</x>
+      <y>540</y>
+      <width>21</width>
+      <height>16</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 167, 35);</string>
     </property>
     <property name="text">
-     <string>OP</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1271,8 +1202,1984 @@ Bus</string>
    <widget class="QLabel" name="op_4">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>730</x>
+      <y>540</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 167, 35);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>310</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Izquierda.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>560</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Izquierda.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>310</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Izquierda.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>560</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Izquierda.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>170</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>170</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Arriba.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>580</y>
+      <width>51</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Doble curva.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>330</y>
+      <width>51</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Doble curva.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>330</y>
+      <width>51</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Doble curva.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>580</y>
+      <width>51</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Doble curva.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>240</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Izquierda-G.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>290</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Derecha-G.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>240</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Derecha-G.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>290</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Izquierda-G.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>490</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Izquierda-G.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>540</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Derecha-G.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>490</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Derecha-G.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>540</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Izquierda-G.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>21</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Doblada.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>480</y>
+      <width>21</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Doblada.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>480</y>
+      <width>21</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Doblada.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>230</y>
+      <width>21</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Doblada.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>100</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>90</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Ariba-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>100</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>100</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Arriba.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>60</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Derecha.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>270</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>520</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>520</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>270</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>600</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>600</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>520</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_39">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>520</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_40">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>350</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_41">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>350</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_43">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>270</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_44">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>270</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_45">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>340</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Ariba-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>600</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_48">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>520</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_49">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>600</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_50">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>520</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_51">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>270</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_52">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>350</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_53">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>270</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_54">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>350</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_55">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>100</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_56">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>110</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Ariba-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_57">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>210</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_58">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>210</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_59">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>460</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_60">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>460</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_61">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>210</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_62">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>210</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_63">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>460</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_64">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>460</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_65">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>210</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_66">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>460</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_67">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>210</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_68">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>460</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Abajo-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>590</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Ariba-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_69">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>340</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Ariba-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_70">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>590</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Ariba-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>90</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Ariba-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_71">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
       <y>10</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Contador de 
+Programa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_72">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Direccionamiento de 
+Memoria</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_73">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>20</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Memoria</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_74">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Puerto de Entrada</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_75">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>20</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Puerto de Salida</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_76">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_77">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>230</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_78">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>F</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_80">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>480</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_81">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>480</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_82">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>620</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>F</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_79">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>230</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_83">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>230</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_84">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>370</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>F</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_85">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>480</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_86">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>480</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_87">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>620</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>F</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cuerpo_senales">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>10</y>
+      <width>171</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 3px solid black;
+ border-radius: 5px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(52, 173, 190, 255), stop:0.128713 rgba(52, 173, 190, 255), stop:0.366337 rgba(52, 173, 190, 255), stop:0.6 rgba(52, 173, 190, 255), stop:0.75 rgba(54, 173, 190, 255), stop:0.792079 rgba(101, 187, 255, 255), stop:0.86 rgba(101, 187, 255, 255), stop:0.950495 rgba(101, 187, 255, 231));</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_88">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>240</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Registro de 
+Instrucciones</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_89">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>490</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Registro de 
+Instrucciones</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_90">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>240</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Registro de 
+Instrucciones</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_91">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>490</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Registro de 
+Instrucciones</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_92">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>640</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>R.T</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_93">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>390</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>R.T</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_94">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>390</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>R.T</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_95">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>640</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>R.T</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_96">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>670</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reloj</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_97">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>640</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="flechas.qrc">:/Flechas/Flechas/Ariba-D.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Ca_n1">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>220</y>
       <width>31</width>
       <height>21</height>
      </rect>
@@ -1280,39 +3187,2112 @@ Bus</string>
     <property name="styleSheet">
      <string notr="true"> border: 2px solid black;
  border-radius: 5px;
- background-color: rgb(255, 100, 0);</string>
+ background-color: rgb(255, 0, 0);</string>
     </property>
     <property name="text">
-     <string>OP</string>
+     <string>Ca</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="La_n1">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>220</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>La</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cb_n1">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>220</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cb</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lb_n1">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>220</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lb</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cf_n1">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>250</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cf</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lf_n1">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>250</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lf</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cri_n1">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>250</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cri</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RT_n1">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>250</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>RT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Ca_n2">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>350</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Ca</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lb_n2">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>350</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lb</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cri_n2">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>380</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cri</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cf_n2">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>380</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cf</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cb_n2">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>350</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cb</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="La_n2">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>350</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>La</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lf_n2">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>380</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lf</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RT_n2">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>380</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>RT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Ca_n3">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>480</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Ca</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lb_n3">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>480</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lb</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cri_n3">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>510</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cri</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cf_n3">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>510</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cf</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cb_n3">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>480</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cb</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="La_n3">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>480</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>La</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lf_n3">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>510</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lf</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RT_n3">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>510</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>RT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Ca_n4">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>610</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Ca</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lb_n4">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>610</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lb</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cri_n4">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>640</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cri</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cf_n4">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>640</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cf</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cb_n4">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>610</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cb</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="La_n4">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>610</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>La</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lf_n4">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>640</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lf</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RT_n4">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>640</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>RT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lcp_n2">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>320</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lcp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Crdm_n2">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>320</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Crdm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Icp_n2">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>320</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Icp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Dcp_n2">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>320</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Dcp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lcp_n1">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>190</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Lcp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Dcp_n1">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>190</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Dcp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Crdm_n1">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>190</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Crdm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Icp_n1">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>190</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Icp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lcp_n3">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>450</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lcp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Dcp_n3">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>450</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Dcp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Crdm_n3">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>450</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Crdm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Icp_n3">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>450</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Icp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Crdm_n4">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>580</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Crdm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lcp_n4">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>580</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lcp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Icp_n4">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>580</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Icp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Dcp_n4">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>580</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Dcp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_98">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>169</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Señales del Núcleo 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cuerpo_n1">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>160</y>
+      <width>171</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Señales de control del Núcleo 1.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 3px solid black;
+background-color: rgb(131, 224, 224);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cuerpo_n2">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>290</y>
+      <width>171</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Señales de control del Núcleo 2.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 3px solid black;
+background-color: rgb(131, 224, 224);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_99">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>300</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Señales del Núcleo 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cuerpo_n3">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>420</y>
+      <width>171</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Señales de control del Núcleo 3.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 3px solid black;
+background-color: rgb(131, 224, 224);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_100">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>430</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Señales del Núcleo 3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cuerpo_n4">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>550</y>
+      <width>171</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Señales de control del Núcleo 4.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 3px solid black;
+background-color: rgb(131, 224, 224);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_101">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>560</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Señales del Núcleo 4</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Liberar_Memoria">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>120</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Lm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Escribir_Memoria">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>120</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Em</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Liberar_Entrada">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>120</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Le</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cargar_Salida">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>120</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cs</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1291</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(51, 252, 255, 47), stop:0.253731 rgba(70, 252, 255, 69), stop:0.393035 rgba(155, 187, 255, 190), stop:0.45 rgba(51, 184, 255, 103), stop:0.482587 rgba(59, 212, 209, 139), stop:0.522388 rgba(71, 252, 255, 130), stop:0.552239 rgba(131, 209, 251, 141), stop:0.577114 rgba(0, 232, 255, 76), stop:0.641791 rgba(0, 255, 157, 56), stop:1 rgba(0, 147, 255, 160));</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_102">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>20</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Señales 
+de 
+Control</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cuerpo_n1_2">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>110</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 3px solid black;
+background-color: rgb(131, 224, 224);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_104">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Núcleo 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_105">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>190</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Núcleo 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_106">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>440</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Núcleo 3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_107">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>440</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Núcleo 4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="z_n1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>400</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="d_n1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>400</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="s_n1">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>400</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p_n1">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>400</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>P</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="z_n3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p_n3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>P</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="d_n3">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="s_n3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="z_n2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>400</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p_n2">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>400</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>P</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="d_n2">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>400</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="s_n2">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>400</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="z_n4">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p_n4">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>P</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="d_n4">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="s_n4">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 2px solid black;
+ border-radius: 5px;
+ background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_108">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>380</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Banderas</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_109">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>630</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Banderas</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_110">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>630</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Banderas</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_111">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>380</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Banderas</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_112">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>290</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Op</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_113">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>540</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Op</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_114">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>290</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Op</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_115">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>540</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Op</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>graphicsView</zorder>
+   <zorder>label_56</zorder>
+   <zorder>label_55</zorder>
    <zorder>cuerpo_cpu4</zorder>
    <zorder>cuerpo_memoria</zorder>
    <zorder>cuerpo_cpu2</zorder>
    <zorder>cuerpo_cpu1</zorder>
    <zorder>bus_principal</zorder>
-   <zorder>bus_secuandario_1</zorder>
    <zorder>arbitro_bus</zorder>
-   <zorder>reg_a_1</zorder>
-   <zorder>reg_b_1</zorder>
    <zorder>ual_1</zorder>
    <zorder>reg_f_1</zorder>
-   <zorder>label_9</zorder>
-   <zorder>reg_inst_1</zorder>
    <zorder>uc_1</zorder>
    <zorder>reg_temp_1</zorder>
-   <zorder>bus_secundario_2</zorder>
    <zorder>ual_2</zorder>
    <zorder>reg_f_2</zorder>
-   <zorder>reg_inst_2</zorder>
-   <zorder>label_16</zorder>
-   <zorder>reg_b_2</zorder>
    <zorder>reg_temp_2</zorder>
    <zorder>uc_2</zorder>
-   <zorder>reg_a_2</zorder>
    <zorder>memoria_principal_1</zorder>
    <zorder>memoria_principal_2</zorder>
    <zorder>puerto_entrada</zorder>
@@ -1322,29 +5302,217 @@ Bus</string>
    <zorder>registro_dm</zorder>
    <zorder>registro_cp</zorder>
    <zorder>cuerpo_cpu3</zorder>
-   <zorder>reg_b_3</zorder>
-   <zorder>label_29</zorder>
    <zorder>ual_3</zorder>
    <zorder>uc_3</zorder>
    <zorder>reg_temp_3</zorder>
-   <zorder>reg_inst_3</zorder>
-   <zorder>reg_a_3</zorder>
-   <zorder>bus_secundario_3</zorder>
    <zorder>reg_f_3</zorder>
    <zorder>reg_f_4</zorder>
    <zorder>reg_temp_4</zorder>
-   <zorder>reg_a_4</zorder>
    <zorder>uc_4</zorder>
-   <zorder>reg_inst_4</zorder>
-   <zorder>label_42</zorder>
    <zorder>ual_4</zorder>
-   <zorder>reg_b_4</zorder>
-   <zorder>bus_secundario_4</zorder>
-   <zorder>reloj</zorder>
    <zorder>op_1</zorder>
    <zorder>op_2</zorder>
    <zorder>op_3</zorder>
    <zorder>op_4</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_15</zorder>
+   <zorder>label_17</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>label_20</zorder>
+   <zorder>label_21</zorder>
+   <zorder>label_22</zorder>
+   <zorder>label_23</zorder>
+   <zorder>label_24</zorder>
+   <zorder>label_25</zorder>
+   <zorder>label_26</zorder>
+   <zorder>label_28</zorder>
+   <zorder>label_30</zorder>
+   <zorder>label_31</zorder>
+   <zorder>label_32</zorder>
+   <zorder>reg_inst_1</zorder>
+   <zorder>label_33</zorder>
+   <zorder>reg_inst_3</zorder>
+   <zorder>label_34</zorder>
+   <zorder>reg_inst_4</zorder>
+   <zorder>label_35</zorder>
+   <zorder>reg_inst_2</zorder>
+   <zorder>label_36</zorder>
+   <zorder>label_37</zorder>
+   <zorder>label_38</zorder>
+   <zorder>label_39</zorder>
+   <zorder>label_40</zorder>
+   <zorder>label_41</zorder>
+   <zorder>label_43</zorder>
+   <zorder>label_44</zorder>
+   <zorder>label_45</zorder>
+   <zorder>label_47</zorder>
+   <zorder>label_48</zorder>
+   <zorder>label_49</zorder>
+   <zorder>label_50</zorder>
+   <zorder>label_51</zorder>
+   <zorder>label_52</zorder>
+   <zorder>label_53</zorder>
+   <zorder>label_54</zorder>
+   <zorder>reg_a_1</zorder>
+   <zorder>reg_b_1</zorder>
+   <zorder>reg_b_3</zorder>
+   <zorder>reg_a_3</zorder>
+   <zorder>reg_a_2</zorder>
+   <zorder>reg_b_2</zorder>
+   <zorder>reg_a_4</zorder>
+   <zorder>reg_b_4</zorder>
+   <zorder>label_57</zorder>
+   <zorder>label_58</zorder>
+   <zorder>label_59</zorder>
+   <zorder>label_60</zorder>
+   <zorder>label_61</zorder>
+   <zorder>label_62</zorder>
+   <zorder>label_63</zorder>
+   <zorder>label_64</zorder>
+   <zorder>label_65</zorder>
+   <zorder>label_66</zorder>
+   <zorder>label_67</zorder>
+   <zorder>label_68</zorder>
+   <zorder>bus_secuandario_1</zorder>
+   <zorder>bus_secundario_3</zorder>
+   <zorder>bus_secundario_2</zorder>
+   <zorder>bus_secundario_4</zorder>
+   <zorder>label_46</zorder>
+   <zorder>label_69</zorder>
+   <zorder>label_70</zorder>
+   <zorder>label_27</zorder>
+   <zorder>label_71</zorder>
+   <zorder>label_72</zorder>
+   <zorder>label_73</zorder>
+   <zorder>label_74</zorder>
+   <zorder>label_75</zorder>
+   <zorder>label_76</zorder>
+   <zorder>label_77</zorder>
+   <zorder>label_78</zorder>
+   <zorder>label_80</zorder>
+   <zorder>label_81</zorder>
+   <zorder>label_82</zorder>
+   <zorder>label_79</zorder>
+   <zorder>label_83</zorder>
+   <zorder>label_84</zorder>
+   <zorder>label_85</zorder>
+   <zorder>label_86</zorder>
+   <zorder>label_87</zorder>
+   <zorder>cuerpo_senales</zorder>
+   <zorder>label_88</zorder>
+   <zorder>label_89</zorder>
+   <zorder>label_90</zorder>
+   <zorder>label_91</zorder>
+   <zorder>label_92</zorder>
+   <zorder>label_93</zorder>
+   <zorder>label_94</zorder>
+   <zorder>label_95</zorder>
+   <zorder>label_96</zorder>
+   <zorder>label_97</zorder>
+   <zorder>reloj</zorder>
+   <zorder>cuerpo_n1</zorder>
+   <zorder>RT_n1</zorder>
+   <zorder>label_98</zorder>
+   <zorder>La_n1</zorder>
+   <zorder>Lb_n1</zorder>
+   <zorder>Crdm_n1</zorder>
+   <zorder>Cb_n1</zorder>
+   <zorder>Lcp_n1</zorder>
+   <zorder>Dcp_n1</zorder>
+   <zorder>Icp_n1</zorder>
+   <zorder>Lf_n1</zorder>
+   <zorder>Ca_n1</zorder>
+   <zorder>Cf_n1</zorder>
+   <zorder>Cri_n1</zorder>
+   <zorder>cuerpo_n2</zorder>
+   <zorder>Icp_n2</zorder>
+   <zorder>RT_n2</zorder>
+   <zorder>La_n2</zorder>
+   <zorder>Dcp_n2</zorder>
+   <zorder>Lcp_n2</zorder>
+   <zorder>Lb_n2</zorder>
+   <zorder>Cb_n2</zorder>
+   <zorder>Crdm_n2</zorder>
+   <zorder>Lf_n2</zorder>
+   <zorder>Cf_n2</zorder>
+   <zorder>Ca_n2</zorder>
+   <zorder>Cri_n2</zorder>
+   <zorder>label_99</zorder>
+   <zorder>cuerpo_n3</zorder>
+   <zorder>Cri_n3</zorder>
+   <zorder>Crdm_n3</zorder>
+   <zorder>Lb_n3</zorder>
+   <zorder>La_n3</zorder>
+   <zorder>Dcp_n3</zorder>
+   <zorder>Icp_n3</zorder>
+   <zorder>Cb_n3</zorder>
+   <zorder>Lf_n3</zorder>
+   <zorder>Cf_n3</zorder>
+   <zorder>RT_n3</zorder>
+   <zorder>Lcp_n3</zorder>
+   <zorder>Ca_n3</zorder>
+   <zorder>label_100</zorder>
+   <zorder>cuerpo_n4</zorder>
+   <zorder>Lf_n4</zorder>
+   <zorder>Cri_n4</zorder>
+   <zorder>Icp_n4</zorder>
+   <zorder>La_n4</zorder>
+   <zorder>Lcp_n4</zorder>
+   <zorder>Lb_n4</zorder>
+   <zorder>Dcp_n4</zorder>
+   <zorder>RT_n4</zorder>
+   <zorder>Cb_n4</zorder>
+   <zorder>Ca_n4</zorder>
+   <zorder>Crdm_n4</zorder>
+   <zorder>Cf_n4</zorder>
+   <zorder>label_101</zorder>
+   <zorder>label_102</zorder>
+   <zorder>cuerpo_n1_2</zorder>
+   <zorder>Escribir_Memoria</zorder>
+   <zorder>Cargar_Salida</zorder>
+   <zorder>Liberar_Entrada</zorder>
+   <zorder>Liberar_Memoria</zorder>
+   <zorder>label_104</zorder>
+   <zorder>label_105</zorder>
+   <zorder>label_106</zorder>
+   <zorder>label_107</zorder>
+   <zorder>z_n1</zorder>
+   <zorder>d_n1</zorder>
+   <zorder>s_n1</zorder>
+   <zorder>p_n1</zorder>
+   <zorder>z_n3</zorder>
+   <zorder>p_n3</zorder>
+   <zorder>d_n3</zorder>
+   <zorder>s_n3</zorder>
+   <zorder>z_n2</zorder>
+   <zorder>p_n2</zorder>
+   <zorder>d_n2</zorder>
+   <zorder>s_n2</zorder>
+   <zorder>z_n4</zorder>
+   <zorder>p_n4</zorder>
+   <zorder>d_n4</zorder>
+   <zorder>s_n4</zorder>
+   <zorder>label_108</zorder>
+   <zorder>label_109</zorder>
+   <zorder>label_110</zorder>
+   <zorder>label_111</zorder>
+   <zorder>label_112</zorder>
+   <zorder>label_113</zorder>
+   <zorder>label_114</zorder>
+   <zorder>label_115</zorder>
   </widget>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
@@ -1359,6 +5527,8 @@ Bus</string>
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionSimular"/>
+   <addaction name="separator"/>
    <addaction name="actionPaso"/>
    <addaction name="actionInstrucci_n"/>
    <addaction name="actioncorrer"/>
@@ -1366,7 +5536,7 @@ Bus</string>
    <addaction name="actionReiniciar"/>
    <addaction name="separator"/>
    <addaction name="actionSalir"/>
-   <addaction name="actionSimular"/>
+   <addaction name="separator"/>
   </widget>
   <action name="actionReiniciar">
    <property name="icon">
@@ -1384,6 +5554,9 @@ Bus</string>
    </property>
    <property name="text">
     <string>Paso</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
    </property>
   </action>
   <action name="actionInstrucci_n">
@@ -1417,12 +5590,17 @@ Bus</string>
    </property>
   </action>
   <action name="actionSimular">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/Iconos/application_x_desktop.ico</normaloff>:/iconos/Iconos/application_x_desktop.ico</iconset>
+   </property>
    <property name="text">
     <string>Simular</string>
    </property>
   </action>
  </widget>
  <resources>
+  <include location="flechas.qrc"/>
   <include location="iconos.qrc"/>
  </resources>
  <connections/>

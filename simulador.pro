@@ -47,4 +47,6 @@ FORMS += \
     simulador_computador.ui
 
 RESOURCES += \
-    iconos.qrc
+    iconos.qrc \
+    flechas.qrc \
+    fondo.qrc

@@ -70,7 +70,8 @@ long UNIDAD_ARITMETICO_LOGICA::indicadores(long valor){
     (valor == 0) ? z = 1 : z = 0;
     (valor < 0) ? s = 1 : s = 0;
     (labs(valor) > VALOR_MAX) ? d = 1 : d = 0;
-    banderas = 8*s + 4*p + z*2 +1*d;
+    (valor == 0) ? p = 1 : p = 0;
+    banderas = 8*z + 4*d + s*2 +1*p;
     return banderas;
 }
 

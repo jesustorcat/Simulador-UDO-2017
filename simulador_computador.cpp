@@ -1,5 +1,6 @@
 #include "simulador_computador.h"
 #include "ui_simulador_computador.h"
+#define VALOR_MAXIMO 4294967295 //32 bits
 
 using namespace std;
 
@@ -19,6 +20,9 @@ int turno = 0;
 UNIDAD_ARITMETICO_LOGICA ual_1, ual_2, ual_3, ual_4;
 UNIDAD_DE_CONTROL uc_1, uc_2, uc_3, uc_4;
 ARBITRO_DE_BUS ab;
+
+QString activo = "QLabel{border: 2px solid black; border-radius: 5px; background-color: rgb(0, 255, 0);}";
+QString inactivo = "QLabel{border: 2px solid black; border-radius: 5px; background-color: rgb(255, 0, 0);}";
 
 
 simulador_computador::simulador_computador(QWidget *parent) :
@@ -48,9 +52,10 @@ void simulador_computador::ejecutar_n1(){
     if (LCP == 1){
         ui->bus_principal->setText(ui->registro_cp->text());
         ui->bus_secuandario_1->setText(ui->bus_principal->text());
+        ui->Lcp_n1->setStyleSheet("QLabel{border: 2px solid black; border-radius: 5px; background-color: rgb(0, 255, 0);}");
     }
     else{
-
+        ui->Lcp_n1->setStyleSheet("QLabel{border: 2px solid black; border-radius: 5px; background-color: rgb(255, 0, 0);}");
     }
 
     //Carga el contenido de la memoria al bus principal.
@@ -59,25 +64,30 @@ void simulador_computador::ejecutar_n1(){
         ui->memoria_principal_1->setText(QString::number(memoria[i], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_1->text());
         ui->bus_secuandario_1->setText(ui->bus_principal->text());
-
+        ui->Liberar_Memoria->setStyleSheet(activo);
         cout << i << endl;
     }
     else{
-
+        ui->Liberar_Memoria->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del registro F hacia el bus principal.
     if (LF == 1){
         ui->bus_secuandario_1->setText(ui->reg_f_1->text());
+        ui->Lf_n1->setStyleSheet("QLabel{border: 2px solid black; border-radius: 5px; background-color: rgb(0, 255, 0);}");
     }
     else{
-
+        ui->Lf_n1->setStyleSheet("QLabel{border: 2px solid black; border-radius: 5px; background-color: rgb(255, 0, 0);}");
     }
 
     //Carga el contenido del puerto de entrada al bus principal.
     if (LE == 1){
         ui->bus_principal->setText(ui->puerto_entrada->text().toUpper());
         ui->bus_secuandario_1->setText(ui->bus_principal->text());
+        ui->Liberar_Entrada->setStyleSheet(activo);
+    }
+    else{
+        ui->Liberar_Entrada->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del bus principal al registro de contador de programa.
@@ -93,9 +103,10 @@ void simulador_computador::ejecutar_n1(){
     if (CRDM == 1){
         //ui->bus_principal->setText(ui->bus_secuandario_1->text());
         ui->registro_dm->setText(ui->bus_principal->text());
+        ui->Crdm_n1->setStyleSheet(activo);
     }
     else {
-
+        ui->Crdm_n1->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del bus hacia el registro de instrucciones.
@@ -103,18 +114,20 @@ void simulador_computador::ejecutar_n1(){
         ui->bus_secuandario_1->setText(ui->bus_principal->text());
         ui->reg_inst_1->setText(ui->bus_secuandario_1->text());
         uc_1.cargar_ri(ui->reg_inst_1->text().toLong(&ok, 16));
+        ui->Cri_n1->setStyleSheet(activo);
     }
     else {
-
+        ui->Cri_n1->setStyleSheet(inactivo);
     }
 
     //Cargar el contenido del bus en el puerto de salida.
     if (CS == 1){
         ui->bus_principal->setText(ui->bus_secuandario_1->text());
         ui->puerto_salida->setText(ui->bus_principal->text());
+        ui->Cargar_Salida->setStyleSheet(activo);
     }
     else {
-
+        ui->Cargar_Salida->setStyleSheet(inactivo);
     }
 
     //Cargar contenido del puerto de entrada
@@ -126,18 +139,20 @@ void simulador_computador::ejecutar_n1(){
     if (CA == 1){
         ui->reg_a_1->setText(ui->bus_secuandario_1->text());
         ual_1.cargar_a(ui->reg_a_1->text().toLong(&ok, 16));
+        ui->Ca_n1->setStyleSheet(activo);
     }
     else {
-
+        ui->Ca_n1->setStyleSheet(inactivo);
     }
 
     //Cargar contenido del bus principal hacia el registro B.
     if (CB == 1){
         ui->reg_b_1->setText(ui->bus_secuandario_1->text());
         ual_1.cargar_b(ui->reg_b_1->text().toLong(&ok, 16));
+        ui->Cb_n1->setStyleSheet(activo);
     }
     else {
-
+        ui->Cb_n1->setStyleSheet(inactivo);
     }
 
     //Carga el código de operación de la unidad aritmético lógica.
@@ -154,47 +169,79 @@ void simulador_computador::ejecutar_n1(){
         ui->memoria_principal_1->setText(QString::number(memoria[i], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_1->text());
         ui->bus_secuandario_1->setText(ui->bus_principal->text());
+        ui->Escribir_Memoria->setStyleSheet(activo);
         //memoria[i] = ui->memoria_principal_1->text().toLong();
     }
     else{
-
+        ui->Escribir_Memoria->setStyleSheet(inactivo);
     }
 
     //Cargar contenido en el registro F.
     if (CF == 1){
         ui->op_1->setText(QString::number(ual_1.cargar_op(OP), 10).toUpper());
         ual_1.operacion(_F, _indicadores);
+
+
+        if (((_indicadores&0x8)>>3) == 1)
+            ui->z_n1->setStyleSheet(activo);
+        else
+            ui->z_n1->setStyleSheet(inactivo);
+
+        if (((_indicadores&0x4)>>2) == 1)
+            ui->d_n1->setStyleSheet(activo);
+        else
+            ui->d_n1->setStyleSheet(inactivo);
+
+        if (((_indicadores&0x2)>>1) == 1)
+            ui->s_n1->setStyleSheet(activo);
+        else
+            ui->s_n1->setStyleSheet(inactivo);
+
+        if ((_indicadores&0x1) == 1)
+            ui->p_n1->setStyleSheet(activo);
+        else
+            ui->p_n1->setStyleSheet(inactivo);
+
+        if (_F > VALOR_MAXIMO){
+            _F = VALOR_MAXIMO;
+        }
+
         ui->reg_f_1->setText(QString::number(_F, 16).toUpper());
+        ui->Cf_n1->setStyleSheet(activo);
         //cout << OP << endl;
     }
     else {
-
+        ui->Cf_n1->setStyleSheet(inactivo);
     }
 
     //Incrementar registro contador de programa.
     if (ICP == 1){
         ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
+        ui->Icp_n1->setStyleSheet(activo);
     }
     else {
-
+        ui->Icp_n1->setStyleSheet(inactivo);
     }
 
     //Decrementar registro contador de programa.
     if (DCP == 1){
         ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
+        ui->Dcp_n1->setStyleSheet(activo);
     }
     else {
-
+        ui->Dcp_n1->setStyleSheet(inactivo);
     }
 
     //Reinicio del registro temporizador.
     if (RT == 1){
         ui->reg_temp_1->setText("0");
         temp = 0;
+        ui->RT_n1->setStyleSheet(activo);
     }
     else {
         temp = ui->reg_temp_1->text().toLong();
         ++temp;
+        ui->RT_n1->setStyleSheet(inactivo);
     }
 
 }
@@ -219,9 +266,10 @@ void simulador_computador::ejecutar_n2(){
     if (LCP == 1){
         ui->bus_principal->setText(ui->registro_cp->text());
         ui->bus_secundario_2->setText(ui->bus_principal->text());
+        ui->Lcp_n2->setStyleSheet(activo);
     }
     else{
-
+        ui->Lcp_n2->setStyleSheet(inactivo);
     }
 
     //Carga el contenido de la memoria al bus principal.
@@ -230,23 +278,29 @@ void simulador_computador::ejecutar_n2(){
         ui->memoria_principal_2->setText(QString::number(memoria_n2[i2], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_2->text());
         ui->bus_secundario_2->setText(ui->bus_principal->text());
+        ui->Liberar_Memoria->setStyleSheet(activo);
     }
     else{
-
+        ui->Liberar_Memoria->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del registro F hacia el bus principal.
     if (LF == 1){
         ui->bus_secundario_2->setText(ui->reg_f_2->text());
+        ui->Lf_n2->setStyleSheet(activo);
     }
     else{
-
+        ui->Lf_n2->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del puerto de entrada al bus principal.
     if (LE == 1){
         ui->bus_principal->setText(ui->puerto_entrada->text().toUpper());
         ui->bus_secundario_2->setText(ui->bus_principal->text());
+        ui->Liberar_Entrada->setStyleSheet(activo);
+    }
+    else{
+        ui->Liberar_Entrada->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del bus principal al registro de contador de programa.
@@ -261,9 +315,10 @@ void simulador_computador::ejecutar_n2(){
     //Carga el contenido del bus en el registro de direccionamiento de memoria.
     if (CRDM == 1){
         ui->registro_dm->setText(ui->bus_secundario_2->text());
+        ui->Crdm_n2->setStyleSheet(activo);
     }
     else {
-
+        ui->Crdm_n2->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del bus hacia el registro de instrucciones.
@@ -271,18 +326,20 @@ void simulador_computador::ejecutar_n2(){
         ui->bus_secundario_2->setText(ui->bus_principal->text());
         ui->reg_inst_2->setText(ui->bus_secundario_2->text());
         uc_2.cargar_ri(ui->reg_inst_2->text().toLong(&ok, 16));
+        ui->Cri_n2->setStyleSheet(activo);
     }
     else {
-
+        ui->Cri_n2->setStyleSheet(inactivo);
     }
 
     //Cargar el contenido del bus en el puerto de salida.
     if (CS == 1){
         ui->bus_principal->setText(ui->bus_secundario_2->text());
         ui->puerto_salida->setText(ui->bus_principal->text());
+        ui->Cargar_Salida->setStyleSheet(activo);
     }
     else {
-
+        ui->Cargar_Salida->setStyleSheet(inactivo);
     }
 
     //Cargar contenido del puerto de entrada
@@ -294,18 +351,20 @@ void simulador_computador::ejecutar_n2(){
     if (CA == 1){
         ui->reg_a_2->setText(ui->bus_secundario_2->text());
         ual_2.cargar_a(ui->reg_a_2->text().toLong(&ok, 16));
+        ui->Ca_n2->setStyleSheet(activo);
     }
     else {
-
+        ui->Ca_n2->setStyleSheet(inactivo);
     }
 
     //Cargar contenido del bus principal hacia el registro B.
     if (CB == 1){
         ui->reg_b_2->setText(ui->bus_secundario_2->text());
         ual_2.cargar_b(ui->reg_b_2->text().toLong(&ok, 16));
+        ui->Cb_n2->setStyleSheet(activo);
     }
     else {
-
+        ui->Cb_n2->setStyleSheet(inactivo);
     }
 
     //Carga el código de operación de la unidad aritmético lógica.
@@ -322,47 +381,78 @@ void simulador_computador::ejecutar_n2(){
         ui->memoria_principal_2->setText(QString::number(memoria_n2[i2], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_2->text());
         ui->bus_secundario_2->setText(ui->bus_principal->text());
+        ui->Escribir_Memoria->setStyleSheet(activo);
         //memoria[i] = ui->memoria_principal_1->text().toLong();
     }
     else{
-
+        ui->Escribir_Memoria->setStyleSheet(inactivo);
     }
 
     //Cargar contenido en el registro F.
     if (CF == 1){
         ui->op_2->setText(QString::number(ual_2.cargar_op(OP), 10).toUpper());
         ual_2.operacion(_F, _indicadores);
-        ui->reg_f_2->setText(QString::number(_F, 16).toUpper());
+
+        if (((_indicadores&0x8)>>3) == 1)
+            ui->z_n2->setStyleSheet(activo);
+        else
+            ui->z_n2->setStyleSheet(inactivo);
+
+        if (((_indicadores&0x4)>>2) == 1)
+            ui->d_n2->setStyleSheet(activo);
+        else
+            ui->d_n2->setStyleSheet(inactivo);
+
+        if (((_indicadores&0x2)>>1) == 1)
+            ui->s_n2->setStyleSheet(activo);
+        else
+            ui->s_n2->setStyleSheet(inactivo);
+
+        if ((_indicadores&0x1) == 1)
+            ui->p_n2->setStyleSheet(activo);
+        else
+            ui->p_n2->setStyleSheet(inactivo);
         //cout << OP << endl;
+
+        if (_F > VALOR_MAXIMO){
+            _F = VALOR_MAXIMO;
+        }
+
+        ui->reg_f_2->setText(QString::number(_F, 16).toUpper());
+        ui->Cf_n2->setStyleSheet(activo);
     }
     else {
-
+        ui->Cf_n2->setStyleSheet(inactivo);
     }
 
     //Incrementar registro contador de programa.
     if (ICP == 1){
         ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
+        ui->Icp_n2->setStyleSheet(activo);
     }
     else {
-
+        ui->Icp_n2->setStyleSheet(inactivo);
     }
 
     //Decrementar registro contador de programa.
     if (DCP == 1){
         ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
+        ui->Dcp_n2->setStyleSheet(activo);
     }
     else {
-
+        ui->Dcp_n2->setStyleSheet(inactivo);
     }
 
     //Reinicio del registro temporizador.
     if (RT == 1){
         ui->reg_temp_2->setText("0");
         temp_2 = 0;
+        ui->RT_n2->setStyleSheet(activo);
     }
     else {
         temp_2 = ui->reg_temp_2->text().toLong();
         ++temp_2;
+        ui->RT_n2->setStyleSheet(inactivo);
     }
 }
 
@@ -386,9 +476,10 @@ void simulador_computador::ejecutar_n3(){
     if (LCP == 1){
         ui->bus_principal->setText(ui->registro_cp->text());
         ui->bus_secundario_3->setText(ui->bus_principal->text());
+        ui->Lcp_n3->setStyleSheet(activo);
     }
     else{
-
+        ui->Lcp_n3->setStyleSheet(inactivo);
     }
 
     //Carga el contenido de la memoria al bus principal.
@@ -397,23 +488,29 @@ void simulador_computador::ejecutar_n3(){
         ui->memoria_principal_3->setText(QString::number(memoria_n3[i3], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_3->text());
         ui->bus_secundario_3->setText(ui->bus_principal->text());
+        ui->Liberar_Memoria->setStyleSheet(activo);
     }
     else{
-
+        ui->Liberar_Memoria->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del registro F hacia el bus principal.
     if (LF == 1){
         ui->bus_secundario_3->setText(ui->reg_f_3->text());
+        ui->Lf_n3->setStyleSheet(activo);
     }
     else{
-
+        ui->Lf_n3->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del puerto de entrada al bus principal.
     if (LE == 1){
         ui->bus_principal->setText(ui->puerto_entrada->text().toUpper());
         ui->bus_secundario_3->setText(ui->bus_principal->text());
+        ui->Liberar_Entrada->setStyleSheet(activo);
+    }
+    else{
+        ui->Liberar_Entrada->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del bus principal al registro de contador de programa.
@@ -429,9 +526,10 @@ void simulador_computador::ejecutar_n3(){
     if (CRDM == 1){
         //ui->bus_principal->setText(ui->bus_secundario_3->text());
         ui->registro_dm->setText(ui->bus_principal->text());
+        ui->Crdm_n3->setStyleSheet(activo);
     }
     else {
-
+        ui->Crdm_n3->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del bus hacia el registro de instrucciones.
@@ -439,18 +537,20 @@ void simulador_computador::ejecutar_n3(){
         ui->bus_secundario_3->setText(ui->bus_principal->text());
         ui->reg_inst_3->setText(ui->bus_secundario_3->text());
         uc_3.cargar_ri(ui->reg_inst_3->text().toLong(&ok, 16));
+        ui->Cri_n3->setStyleSheet(activo);
     }
     else {
-
+        ui->Cri_n3->setStyleSheet(inactivo);
     }
 
     //Cargar el contenido del bus en el puerto de salida.
     if (CS == 1){
         ui->bus_principal->setText(ui->bus_secundario_3->text());
         ui->puerto_salida->setText(ui->bus_principal->text());
+        ui->Cargar_Salida->setStyleSheet(activo);
     }
     else {
-
+        ui->Cargar_Salida->setStyleSheet(inactivo);
     }
 
     //Cargar contenido del puerto de entrada
@@ -462,18 +562,20 @@ void simulador_computador::ejecutar_n3(){
     if (CA == 1){
         ui->reg_a_3->setText(ui->bus_secundario_3->text());
         ual_3.cargar_a(ui->reg_a_3->text().toLong(&ok, 16));
+        ui->Ca_n3->setStyleSheet(activo);
     }
     else {
-
+        ui->Ca_n3->setStyleSheet(inactivo);
     }
 
     //Cargar contenido del bus principal hacia el registro B.
     if (CB == 1){
         ui->reg_b_3->setText(ui->bus_secundario_3->text());
         ual_3.cargar_b(ui->reg_b_3->text().toLong(&ok, 16));
+        ui->Cb_n3->setStyleSheet(activo);
     }
     else {
-
+        ui->Cb_n3->setStyleSheet(inactivo);
     }
 
     //Carga el código de operación de la unidad aritmético lógica.
@@ -490,46 +592,77 @@ void simulador_computador::ejecutar_n3(){
         ui->memoria_principal_3->setText(QString::number(memoria_n3[i3], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_3->text());
         ui->bus_secundario_3->setText(ui->bus_principal->text());
+        ui->Escribir_Memoria->setStyleSheet(activo);
         //memoria[i] = ui->memoria_principal_1->text().toLong();
     }
     else{
-
+        ui->Escribir_Memoria->setStyleSheet(inactivo);
     }
 
     //Cargar contenido en el registro F.
     if (CF == 1){
         ui->op_3->setText(QString::number(ual_3.cargar_op(OP), 10).toUpper());
         ual_3.operacion(_F, _indicadores);
+
+
+        if (((_indicadores&0x8)>>3) == 1)
+            ui->z_n3->setStyleSheet(activo);
+        else
+            ui->z_n3->setStyleSheet(inactivo);
+
+        if (((_indicadores&0x4)>>2) == 1)
+            ui->d_n3->setStyleSheet(activo);
+        else
+            ui->d_n3->setStyleSheet(inactivo);
+
+        if (((_indicadores&0x2)>>1) == 1)
+            ui->s_n3->setStyleSheet(activo);
+        else
+            ui->s_n3->setStyleSheet(inactivo);
+
+        if ((_indicadores&0x1) == 1)
+            ui->p_n3->setStyleSheet(activo);
+        else
+            ui->p_n3->setStyleSheet(inactivo);
+
+        if (_F > VALOR_MAXIMO){
+            _F = VALOR_MAXIMO;
+        }
         ui->reg_f_3->setText(QString::number(_F, 16).toUpper());
+        ui->Cf_n3->setStyleSheet(activo);
     }
     else {
-
+        ui->Cf_n3->setStyleSheet(inactivo);
     }
 
     //Incrementar registro contador de programa.
     if (ICP == 1){
         ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
+        ui->Icp_n3->setStyleSheet(activo);
     }
     else {
-
+        ui->Icp_n3->setStyleSheet(inactivo);
     }
 
     //Decrementar registro contador de programa.
     if (DCP == 1){
         ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
+        ui->Dcp_n3->setStyleSheet(activo);
     }
     else {
-
+        ui->Dcp_n3->setStyleSheet(inactivo);
     }
 
     //Reinicio del registro temporizador.
     if (RT == 1){
         ui->reg_temp_3->setText("0");
         temp_3 = 0;
+        ui->RT_n3->setStyleSheet(activo);
     }
     else {
         temp_3 = ui->reg_temp_3->text().toLong();
         ++temp_3;
+        ui->RT_n3->setStyleSheet(inactivo);
     }
 }
 
@@ -553,9 +686,10 @@ void simulador_computador::ejecutar_n4(){
     if (LCP == 1){
         ui->bus_principal->setText(ui->registro_cp->text());
         ui->bus_secundario_4->setText(ui->bus_principal->text());
+        ui->Lcp_n4->setStyleSheet(activo);
     }
     else{
-
+        ui->Lcp_n4->setStyleSheet(inactivo);
     }
 
     //Carga el contenido de la memoria al bus principal.
@@ -564,23 +698,29 @@ void simulador_computador::ejecutar_n4(){
         ui->memoria_principal_4->setText(QString::number(memoria_n4[i4], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_4->text());
         ui->bus_secundario_4->setText(ui->bus_principal->text());
+        ui->Liberar_Memoria->setStyleSheet(activo);
     }
     else{
-
+        ui->Liberar_Memoria->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del registro F hacia el bus principal.
     if (LF == 1){
         ui->bus_secundario_4->setText(ui->reg_f_4->text());
+        ui->Lf_n4->setStyleSheet(activo);
     }
     else{
-
+        ui->Lf_n4->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del puerto de entrada al bus principal.
     if (LE == 1){
         ui->bus_principal->setText(ui->puerto_entrada->text().toUpper());
         ui->bus_secundario_4->setText(ui->bus_principal->text());
+        ui->Liberar_Entrada->setStyleSheet(activo);
+    }
+    else{
+        ui->Liberar_Entrada->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del bus principal al registro de contador de programa.
@@ -596,9 +736,10 @@ void simulador_computador::ejecutar_n4(){
     if (CRDM == 1){
         //ui->bus_principal->setText(ui->bus_secundario_4->text());
         ui->registro_dm->setText(ui->bus_principal->text());
+        ui->Crdm_n4->setStyleSheet(activo);
     }
     else {
-
+        ui->Crdm_n4->setStyleSheet(inactivo);
     }
 
     //Carga el contenido del bus hacia el registro de instrucciones.
@@ -606,18 +747,20 @@ void simulador_computador::ejecutar_n4(){
         ui->bus_secundario_4->setText(ui->bus_principal->text());
         ui->reg_inst_4->setText(ui->bus_secundario_4->text());
         uc_4.cargar_ri(ui->reg_inst_4->text().toLong(&ok, 16));
+        ui->Cri_n4->setStyleSheet(activo);
     }
     else {
-
+        ui->Cri_n4->setStyleSheet(inactivo);
     }
 
     //Cargar el contenido del bus en el puerto de salida.
     if (CS == 1){
         ui->bus_principal->setText(ui->bus_secundario_4->text());
         ui->puerto_salida->setText(ui->bus_principal->text());
+        ui->Cargar_Salida->setStyleSheet(activo);
     }
     else {
-
+        ui->Cargar_Salida->setStyleSheet(inactivo);
     }
 
     //Cargar contenido del puerto de entrada
@@ -629,18 +772,20 @@ void simulador_computador::ejecutar_n4(){
     if (CA == 1){
         ui->reg_a_4->setText(ui->bus_secundario_4->text());
         ual_4.cargar_a(ui->reg_a_4->text().toLong(&ok, 16));
+        ui->Ca_n4->setStyleSheet(activo);
     }
     else {
-
+        ui->Ca_n4->setStyleSheet(inactivo);
     }
 
     //Cargar contenido del bus principal hacia el registro B.
     if (CB == 1){
         ui->reg_b_4->setText(ui->bus_secundario_4->text());
         ual_4.cargar_b(ui->reg_b_4->text().toLong(&ok, 16));
+        ui->Cb_n4->setStyleSheet(activo);
     }
     else {
-
+        ui->Cb_n4->setStyleSheet(inactivo);
     }
 
     //Carga el código de operación de la unidad aritmético lógica.
@@ -657,46 +802,76 @@ void simulador_computador::ejecutar_n4(){
         ui->memoria_principal_4->setText(QString::number(memoria_n4[i4], 16).toUpper());
         ui->bus_principal->setText(ui->memoria_principal_4->text());
         ui->bus_secundario_4->setText(ui->bus_principal->text());
+        ui->Escribir_Memoria->setStyleSheet(activo);
     }
     else{
-
+        ui->Escribir_Memoria->setStyleSheet(inactivo);
     }
 
     //Cargar contenido en el registro F.
     if (CF == 1){
         ui->op_4->setText(QString::number(ual_4.cargar_op(OP), 10).toUpper());
         ual_4.operacion(_F, _indicadores);
-        ui->reg_f_4->setText(QString::number(_F, 16).toUpper());
 
+        if (((_indicadores&0x8)>>3) == 1)
+            ui->z_n4->setStyleSheet(activo);
+        else
+            ui->z_n4->setStyleSheet(inactivo);
+
+        if (((_indicadores&0x4)>>2) == 1)
+            ui->d_n4->setStyleSheet(activo);
+        else
+            ui->d_n4->setStyleSheet(inactivo);
+
+        if (((_indicadores&0x2)>>1) == 1)
+            ui->s_n4->setStyleSheet(activo);
+        else
+            ui->s_n4->setStyleSheet(inactivo);
+
+        if ((_indicadores&0x1) == 1)
+            ui->p_n4->setStyleSheet(activo);
+        else
+            ui->p_n4->setStyleSheet(inactivo);
+
+        if (_F > VALOR_MAXIMO){
+            _F = VALOR_MAXIMO;
+        }
+
+        ui->reg_f_4->setText(QString::number(_F, 16).toUpper());
+        ui->Cf_n4->setStyleSheet(activo);
     }
     else {
-
+        ui->Cf_n4->setStyleSheet(inactivo);
     }
 
     //Incrementar registro contador de programa.
     if (ICP == 1){
         ui->registro_cp->setText(QString::number(incrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
+        ui->Icp_n4->setStyleSheet(activo);
     }
     else {
-
+        ui->Icp_n4->setStyleSheet(inactivo);
     }
 
     //Decrementar registro contador de programa.
     if (DCP == 1){
         ui->registro_cp->setText(QString::number(decrementar(ui->registro_cp->text().toLong(&ok, 16)), 16).toUpper());
+        ui->Dcp_n4->setStyleSheet(activo);
     }
     else {
-
+        ui->Dcp_n4->setStyleSheet(inactivo);
     }
 
     //Reinicio del registro temporizador.
     if (RT == 1){
         ui->reg_temp_4->setText("0");
         temp_4 = 0;
+        ui->RT_n4->setStyleSheet(activo);
     }
     else {
         temp_4 = ui->reg_temp_4->text().toLong();
         ++temp_4;
+        ui->RT_n4->setStyleSheet(inactivo);
     }
 }
 
@@ -816,6 +991,62 @@ void simulador_computador::on_actionReiniciar_triggered()
     temp = 0; temp_2 = 0; temp_3 = 0; temp_4 = 0;
     registro_cp1 = 0; registro_cp2 = 0; registro_cp3 = 0; registro_cp4 = 0;
     registro_dm1 = 0; registro_dm2 = 0; registro_dm3 = 0; registro_dm4 = 0;
+
+    ui->Crdm_n1->setStyleSheet(inactivo);
+    ui->Crdm_n2->setStyleSheet(inactivo);
+    ui->Crdm_n3->setStyleSheet(inactivo);
+    ui->Crdm_n4->setStyleSheet(inactivo);
+
+    ui->Cri_n1->setStyleSheet(inactivo);
+    ui->Cri_n2->setStyleSheet(inactivo);
+    ui->Cri_n3->setStyleSheet(inactivo);
+    ui->Cri_n4->setStyleSheet(inactivo);
+
+    ui->Ca_n1->setStyleSheet(inactivo);
+    ui->Ca_n2->setStyleSheet(inactivo);
+    ui->Ca_n3->setStyleSheet(inactivo);
+    ui->Ca_n4->setStyleSheet(inactivo);
+
+    ui->Cb_n1->setStyleSheet(inactivo);
+    ui->Cb_n2->setStyleSheet(inactivo);
+    ui->Cb_n3->setStyleSheet(inactivo);
+    ui->Cb_n4->setStyleSheet(inactivo);
+
+    ui->Cf_n1->setStyleSheet(inactivo);
+    ui->Cf_n2->setStyleSheet(inactivo);
+    ui->Cf_n3->setStyleSheet(inactivo);
+    ui->Cf_n4->setStyleSheet(inactivo);
+
+    ui->Lf_n1->setStyleSheet(inactivo);
+    ui->Lf_n2->setStyleSheet(inactivo);
+    ui->Lf_n3->setStyleSheet(inactivo);
+    ui->Lf_n4->setStyleSheet(inactivo);
+
+    ui->Lcp_n1->setStyleSheet(inactivo);
+    ui->Lcp_n2->setStyleSheet(inactivo);
+    ui->Lcp_n3->setStyleSheet(inactivo);
+    ui->Lcp_n4->setStyleSheet(inactivo);
+
+    ui->Icp_n1->setStyleSheet(inactivo);
+    ui->Icp_n2->setStyleSheet(inactivo);
+    ui->Icp_n3->setStyleSheet(inactivo);
+    ui->Icp_n4->setStyleSheet(inactivo);
+
+    ui->Dcp_n1->setStyleSheet(inactivo);
+    ui->Dcp_n2->setStyleSheet(inactivo);
+    ui->Dcp_n3->setStyleSheet(inactivo);
+    ui->Dcp_n4->setStyleSheet(inactivo);
+
+    ui->RT_n1->setStyleSheet(inactivo);
+    ui->RT_n2->setStyleSheet(inactivo);
+    ui->RT_n3->setStyleSheet(inactivo);
+    ui->RT_n4->setStyleSheet(inactivo);
+
+    ui->Escribir_Memoria->setStyleSheet(inactivo);
+    ui->Liberar_Memoria->setStyleSheet(inactivo);
+
+    ui->Liberar_Entrada->setStyleSheet(inactivo);
+    ui->Cargar_Salida->setStyleSheet(inactivo);
 
 }
 

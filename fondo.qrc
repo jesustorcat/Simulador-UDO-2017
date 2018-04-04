@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/Fondo">
+        <file>Fondo/Fondo.png</file>
+    </qresource>
+</RCC>

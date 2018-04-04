@@ -17,6 +17,11 @@
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
      <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <family>Source Code Pro</family>
+       </font>
+      </property>
       <property name="styleSheet">
        <string notr="true">textEdit {
 	background: black
@@ -103,7 +108,6 @@
    <addaction name="separator"/>
    <addaction name="actionCompilar"/>
    <addaction name="actionEjecutar"/>
-   <addaction name="actioncancelar"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNuevo">
@@ -127,7 +131,7 @@
     <string>Abrir</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+A</string>
+    <string>Alt+A</string>
    </property>
   </action>
   <action name="actionGuardar">
