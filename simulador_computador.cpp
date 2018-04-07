@@ -1048,6 +1048,26 @@ void simulador_computador::on_actionReiniciar_triggered()
     ui->Liberar_Entrada->setStyleSheet(inactivo);
     ui->Cargar_Salida->setStyleSheet(inactivo);
 
+    ui->z_n1->setStyleSheet(inactivo);
+    ui->z_n2->setStyleSheet(inactivo);
+    ui->z_n3->setStyleSheet(inactivo);
+    ui->z_n4->setStyleSheet(inactivo);
+
+    ui->s_n1->setStyleSheet(inactivo);
+    ui->s_n2->setStyleSheet(inactivo);
+    ui->s_n3->setStyleSheet(inactivo);
+    ui->s_n4->setStyleSheet(inactivo);
+
+    ui->d_n1->setStyleSheet(inactivo);
+    ui->d_n2->setStyleSheet(inactivo);
+    ui->d_n3->setStyleSheet(inactivo);
+    ui->d_n4->setStyleSheet(inactivo);
+
+    ui->p_n1->setStyleSheet(inactivo);
+    ui->p_n2->setStyleSheet(inactivo);
+    ui->p_n3->setStyleSheet(inactivo);
+    ui->p_n4->setStyleSheet(inactivo);
+
 }
 
 void simulador_computador::on_actionSimular_triggered()
