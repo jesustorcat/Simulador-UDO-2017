@@ -26,6 +26,10 @@
   <property name="windowTitle">
    <string>Simulador UDO - 2017</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="iconos.qrc">
+    <normaloff>:/iconos/Icono.ico</normaloff>:/iconos/Icono.ico</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true"/>
   </property>
@@ -5600,8 +5604,8 @@ background-color: rgb(131, 224, 224);</string>
   </action>
  </widget>
  <resources>
-  <include location="flechas.qrc"/>
   <include location="iconos.qrc"/>
+  <include location="flechas.qrc"/>
  </resources>
  <connections/>
 </ui>

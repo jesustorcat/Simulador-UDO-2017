@@ -24,5 +24,6 @@
         <file>Iconos/instruccion.ico</file>
         <file>Iconos/ayuda.ico</file>
         <file>Iconos/cancelar.ico</file>
+        <file>Icono.ico</file>
     </qresource>
 </RCC>

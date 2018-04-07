@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>simulador</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="iconos.qrc">
+    <normaloff>:/iconos/Icono.ico</normaloff>:/iconos/Icono.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
