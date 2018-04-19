@@ -5534,7 +5534,6 @@ background-color: rgb(131, 224, 224);</string>
    <addaction name="actionSimular"/>
    <addaction name="separator"/>
    <addaction name="actionPaso"/>
-   <addaction name="actionInstrucci_n"/>
    <addaction name="actioncorrer"/>
    <addaction name="separator"/>
    <addaction name="actionReiniciar"/>
@@ -5604,8 +5603,8 @@ background-color: rgb(131, 224, 224);</string>
   </action>
  </widget>
  <resources>
-  <include location="iconos.qrc"/>
   <include location="flechas.qrc"/>
+  <include location="iconos.qrc"/>
  </resources>
  <connections/>
 </ui>
