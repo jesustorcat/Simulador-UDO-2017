@@ -65,7 +65,7 @@ void simulador_computador::ejecutar_n1(){
         ui->bus_principal->setText(ui->memoria_principal_1->text());
         ui->bus_secuandario_1->setText(ui->bus_principal->text());
         ui->Liberar_Memoria->setStyleSheet(activo);
-        cout << i << endl;
+        //cout << i << endl;
     }
     else{
         ui->Liberar_Memoria->setStyleSheet(inactivo);
@@ -891,7 +891,7 @@ void simulador_computador::on_actionPaso_triggered()
     X1 = false; X2 = false; X3 = false; X4 = false;
     ab.turno_nucleo(turno, X1, X2, X3, X4);
 
-    cout << turno << endl;
+    //cout << turno << endl;
 
     if (X1 == true){
         ui->registro_cp->setText(QString::number(registro_cp1, 16).toUpper());
@@ -1118,7 +1118,7 @@ void simulador_computador::cargar_codigo_n1(){
         valor = strtol(xy,NULL,0);
         memoria[i] = valor;
         i++;
-        cout << valor << endl;
+        //cout << valor << endl;
     }
 
     archivo_objeto.close();
